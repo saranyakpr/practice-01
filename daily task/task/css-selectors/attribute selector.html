@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>attribute</title>
+	<style>
+
+	   a[target="_blank"] {
+       background-color: yellow;          
+       }  
+	   
+	   h1[class|="flower"]{
+	   color:red;
+	   }
+	   
+	   [class*="so"]{
+	   color:blue;
+	   }
+	   
+	</style>
+</head>
+<!--     [attribute], [attribute="value"], [attribute~="value"], [attribute|="value"], [attribute^="value"], [attribute$="value"], [attribute*="value"],  -->
+<body>
+               
+   <a href="https://www.w3schools.com">w3schools.com</a>
+   <a href="http://www.disney.com" target="_blank">disney.com</a>
+   <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+   
+   <h1 class="text flower">flower</h1>
+   <h1 class="flower">flower</h1>
+   <h1 class="sun flower">flower</h1> 
+   
+   <h1 class="text-top">Welcome</h1>
+   <p class="top-text">Hello world!</p>
+   <p class="topcontent">Are you learning CSS?</p> 
+   
+<!--    <div class="first_test">The first div element.</div>
+   <div class="second">The second div element.</div>
+   <div class="my-test">The third div element.</div>
+   <p class="mytest">This is some text in a paragraph.</p> -->
+   
+</body>
+</html>
