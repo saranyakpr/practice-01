@@ -1,0 +1,36 @@
+
+body{
+	background-image:url(../img/web.webp);
+	background-repeat:repeat;
+	
+}
+h1{
+	color:white;
+	font-size:80px;
+	text-align:center;
+	margin:0;
+	background:linear-gradient(red,yellow);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+h2{
+	color:yellow;
+}
+div{
+	color:white;
+	font-size:30px;
+	width:50%;
+}
+.div1{
+	border-style:solid double dashed dotted;
+	border-color:red blue yellow green;
+}
+.div2{
+	border-style:dotted solid;
+	border-color:yellow red;
+}
+.div3{
+	border-style:double dashed;
+	border-color: blue green;
+}
+
