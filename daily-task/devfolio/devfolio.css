@@ -1,0 +1,52 @@
+.container{
+	width:90%;
+	margin:auto;
+}
+body{
+	font-family:sans-serif;
+}
+.nav-img{
+	background-image:url("img/man1.jpg"); 
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	height:50rem;
+}
+.nav{
+	
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	margin-left:1.5rem;
+}
+.nav-head{
+	width:30%;
+	color:white;
+	font-size:1.5rem;
+	margin-right:2rem;
+}
+.nav-lists{
+	width:50%;
+	font-size:.8rem;
+}
+.nav-list{
+	color:white;
+	text-decoration:none;
+	padding:.9rem;
+}
+.nav-list:hover{
+	text-decoration:underline;
+	color:white;
+}
+.img-content{
+	color:white;
+	text-align:center;
+}
+.img-content h1{
+	font-size:3rem;
+	margin-top:13rem;
+}
+.img-content h3{
+	font-size:2rem;
+}
