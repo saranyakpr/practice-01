@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>filter</title>
+	<style>
+	   img{
+	   width:30%;
+	   margin:auto;
+	   floate:left;
+	   padding:.5rem;
+	   }
+	   .none{
+	   filter:none;
+	   }
+	   .blur{
+	   filter:blur(5px);
+	   }
+	   .brightness{
+	   filter:brightness(120%);
+	   }
+	   .contrast{
+	   filter:contrast(180%);
+	   }
+	   .grayscale{
+	   filter:grayscale(100%);
+	   }
+	   .hue-rotate{
+	   filter:hue-rotate(180deg);
+	   }
+	   .invert{
+	   filter:invert(100%);
+	   }
+	   .opacity{
+	   filter:opacity(50%);
+	   }
+	   .saturate{
+	   filter:saturate(10);
+	   }
+	   .sepia{
+	   filter:sepia(100%);
+	   }
+	   .drop-shadow{
+	   filter:drop-shadow(8px 8px 10px brown);
+	   }
+	   .mul{
+	   filter::brightness(50%) contrast(180%)}
+	</style>
+</head>
+<body>
+   <div>
+      <img class="none" src="img/review.jpg">
+      <img class="blur" src="img/review.jpg">
+	  <img class="brightness" src="img/review.jpg">
+	  <img class="contrast" src="img/review.jpg">
+	  <img class="grayscale" src="img/review.jpg">
+	  <img class="hue-rotate" src="img/review.jpg"> 
+	  <img class="invert" src="img/review.jpg">
+	  <img class="opacity" src="img/review.jpg">
+	  <img class="saturate" src="img/review.jpg">
+	  <img class="sepia" src="img/review.jpg">
+	  <img class="drop-shadow" src="img/review.jpg">
+	  <img class="mul" src="img/review.jpg">
+   </div>
+</body>
+</html>

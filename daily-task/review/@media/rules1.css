@@ -1,0 +1,29 @@
+@import url("rules2.css"); 
+.keyframe{
+	      color:white;
+		  text-align:center;
+	      width: 100px;
+          height: 100px;
+          background: pink;
+          position: relative;
+         animation: square 8s infinite;
+}
+@keyframes square {
+         from {left: 0px;}
+         to {left: 800px;}
+}
+.important{
+	    
+		  color:red;
+}
+#id{
+	    
+		  color:white;
+}
+ @font-face{
+	      font-family:Poppins-Black;
+		  src:url("img/Poppins-Black.ttf");
+}
+.face{
+	      font-family:Poppins-Black;
+}
