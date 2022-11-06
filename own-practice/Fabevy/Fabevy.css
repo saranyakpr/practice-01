@@ -1,0 +1,23 @@
+body{
+	background-color:white;
+}
+.sectiona{
+	display:flex;
+	flex-direction:row;
+}
+.diva{
+	width:80%;
+	margin-left:20px;
+}
+.divb{
+	width:20%;
+}
+.sectionb{
+	display:flex;
+	flex-direction:row;
+}
+.divc{
+	background-color:purple;
+	width:70%;
+	color:white;
+}
