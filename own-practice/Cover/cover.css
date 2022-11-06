@@ -1,0 +1,55 @@
+body{
+	background-color:black;
+	color:white;
+}
+.sectiona{
+	display:flex;
+	flex-direction:row;
+}
+.diva{
+	float:left;
+	width:40%;
+	font-size:25px;
+	margin-left:350px;
+}
+.divb{
+	float:right;
+	width:60%;
+	display:flex;
+	flex-direction:row;
+	margin-top:40px;
+}
+.divb1{
+	padding:10px;
+	font-size:20px;
+	color:brown;
+}
+.divb a:hover{
+	color:white;
+}
+.sectionb{
+	margin-top:120px;
+}
+.divc{
+	font-size:30px;
+	text-align:center;
+}
+.divd{
+	font-size:25px;
+	text-align:center;
+	margin-top:-20px;
+}
+.dive{
+	font-size:20px;
+	text-align:center;
+	border-radius:50px;
+}
+.sectionc{
+	margin-top:150px;
+	text-align:center;
+	margin-bottom:20px;
+	font-size:20px;
+}
+.span{
+	color:brown;
+}
