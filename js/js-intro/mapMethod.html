@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>mapMethod</title>
+</head>
+<body>
+   <script>
+       //forEach
+      const flowers=["rose", "lotus", "lilly"];
+	  flowers.forEach(function(flower,index,array){
+	     console.log(flower);
+		 console.log(index);
+		 console.log(array);
+	  });
+	  
+	  //map
+	  const animals=["lion", "tiger", "bear", "deer"];
+	  const newArr=animals.map(function(animal){
+	     return animal.toUpperCase();
+	 });
+	 console.log(newArr);
+	 
+	 //uppercase
+	 const fruits=["mango", "apple", "banana", "orange"];
+	 for(i=0; i<fruits.length; i++){
+	    fruits[i]=fruits[i].toUpperCase()
+	 }
+	 console.log(fruits);
+	 
+	 //filter
+	 const ages=[8,10, 18, 20, 22];
+	 let age=ages.filter(function(value){
+	    return value>=18;
+	 });
+	 console.log(age);
+	 
+	 //findIndex
+     <!-- const[ -->
+	    <!-- {id:1, item:"Android Mobile", cost:6500}, -->
+		<!-- {id:2, item:"iPhone Mobile", cost:30000}, -->
+		<!-- {id:3, item:"window Mobile", cost:9000}, -->
+	<!-- ]; -->
+	<!-- let item=items.findIndex(function(value){ -->
+	   <!-- return value.cost>10000; -->
+	<!-- }); -->
+	<!-- console.log(item); -->
+	 
+	 
+	
+   </script>
+</body>
+</html>
