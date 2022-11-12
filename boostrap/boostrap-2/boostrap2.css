@@ -1,0 +1,17 @@
+.head{
+	color:blue;
+	text-align:center;
+}
+.cont{
+	text-align:center;
+	color:#061e66;
+}
+img{
+	width:100%;
+}
+.cols{
+	box-shadow:0px 2px 3px 2px black;
+}
+.icon{
+	font-size:1.3rem;
+}
