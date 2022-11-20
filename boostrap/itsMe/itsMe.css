@@ -67,13 +67,14 @@ body{
 	color:#444444;
 	text-align:center;
 }
-.abtBio span{
+.abtSty span{
 	font-weight:700;
 }
-.abtBio p{
-	font-size:1rem;
-	padding:.1rem;
+.abtSty p{
+	font-size:1.2rem;
+	padding:.5rem;
 }
+
    /* about end */
    /* skill start */
 .progress{
@@ -84,13 +85,28 @@ body{
 }
    /* skill end */
    /* resume start */
+.resumeIn h2::after{
+	content:"";
+	height:2px;
+	margin:auto;
+	width:18%;
+	margin-top:.7rem;
+	line-height:1;
+	background-color:#34B7A7;
+	display:block;
+}
 .resume h3{
-	font-size:1.9rem;
-	margin-bottom:.8rem;
+	font-size:2rem;
+	margin-bottom:1rem;
 	margin-top:2rem;
 }
 .resume h4{
-	font-size:1.5rem;
+	font-size:1.6rem;
+	margin-bottom:1rem;
+}
+.resume p{
+	font-size:1.3rem;
+	margin-bottom:1.4rem;
 }
 .traini{
 	margin-top:2rem;
@@ -100,17 +116,75 @@ body{
 	background-color:#34B7A7;
 	color:white;
 }
-.res{
-	border-left:2px solid #34B7A7;
-	gap:.5rem;
-}
 .res .list{
 	margin-bottom:1rem;
+	font-size:1.2rem;
 }
 .resume h5{
 	margin-bottom:1rem;
 	margin-top:1rem;
 }
+.resume{
+	margin-bottom:2rem;
+	margin-top:2rem;
+	padding-top:2rem;
+	padding-bottom:2rem;
+	background-color:#eeeeee;
+}
+.resumeIn h2{
+	font-size:2rem;
+	color:#444444;
+	text-align:center;
+}
+   /* resume end */
+   /* project start */
+.projectIn h2::after{
+	content:"";
+	height:2px;
+	margin:auto;
+	width:18%;
+	margin-top:.7rem;
+	line-height:1;
+	background-color:#34B7A7;
+	display:block;
+}
+.project{
+	margin-bottom:2rem;
+	margin-top:2rem;
+	padding-top:2rem;
+	padding-bottom:2rem;
+	background-color:#eeeeee;
+}
+.projectIn h2{
+	font-size:2rem;
+	color:#444444;
+	text-align:center;
+}
+.portImg{
+	position:relative;
+	margin-top:2rem;
+}
+.portCont{
+	position:absolute;
+	opacity:0;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:rgba(31,53,72,.6);
+	text-align:center;
+}
+.portImg:hover .portCont{
+	opacity:1;
+	transition:1s else;
+}
+.projectIn a{
+	color:white;
+	text-decoration:none;
+	font-size:2rem;
+}
+   
+
 
 
 
@@ -143,8 +217,9 @@ body{
 	background-color:#34B7A7;
 	display:block;
 }
-.abtBio p{
-	font-size:1.2rem;
+.abtSty p{
+	font-size:1.4rem;
+	padding:1rem;
 }
 .abtBorder{
 	border:1.3rem solid #BDA787; 
@@ -156,8 +231,8 @@ body{
 	margin-left:7rem;
 	margin-top:-5rem;
 }
-.abtBio{
-	display:flex;
+.abtPara p{
+	padding:.8rem;
 }
    /* about end */
     /* skill start */
@@ -224,6 +299,9 @@ body{
 .borderImg{
 	display:flex;
 }
+.divDown{
+	margin-top:10rem;
+}
    /* about end */
     /* skill start */
 .progress{
@@ -237,5 +315,12 @@ body{
 .res{
 	margin-left:5rem;
 }
-	
+.resumeIn h2::after{
+	width:6%;
+}
+	/* resume end */
+	/* project start */
+.projectIn h2::after{
+	width:6%;
+}
 }
