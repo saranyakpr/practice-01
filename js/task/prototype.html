@@ -8,14 +8,14 @@
 </head>
 <body>
    <script>
-      //concat
+      // 1.concat
 	  {let arr1=["mango", "apple", "orange"];
 	   let arr2=["graps", "banana"];
 	   let array=arr1.concat(arr2);
 	   console.log(array);
 	  }
 	  
-	  //forEach
+	  // 2.forEach
 	  {const flowers=["rose", "lotus", "lilly", "sunflower"];
 	  flowers.forEach(function(arrayvalue,index,array){
 	     console.log(arrayvalue);
@@ -23,15 +23,37 @@
 		 console.log(array);
 	  });}
 	  
-	  //map
+	  // 3.map
 	  flowers=["rose", "lotus", "lilly", "sunflower"];
 	   const newArray=flowers.map(function(flower){
 	     return flower.toUpperCase();
 	  });
 	     console.log(newArray);
 	  
+	  // 4.push
+	 flowers=["rose", "lotus", "lilly"];
+	 flowers.push("sunflower");
+	 console.log(flowers);
 	  
+	  // 5.unshift
+	  flowers=["rose", "lotus", "lilly",];
+	  flowers.unshift("sunflower");
+	  console.log(flowers);
 	  
+	  // 6.splice
+	  flowers=["rose", "lotus", "lilly", "sunflower"];
+	  flowers.splice(2,0, "saran","saranya");
+	  console.log(flowers);
+	  
+	  // 7.pop
+	  fruits=["mango", "apple", "banana", "graps"];
+	  fruits.pop();
+	  console.log(fruits);
+	  
+	  // 8.shift
+	  flowers=["rose", "lotus", "lilly", "sunflower"];
+	  flowers.shift();
+	  console.log(flowers);
 	  
    
    
