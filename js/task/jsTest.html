@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>bootstrap</title>
+</head>
+<body>
+   <script>
+      <!-- // 1.different between == and === -->
+	  <!-- {let a=10; b=10; c=-10; -->
+	  <!-- console.log(a==b); -->
+	  <!-- console.log(b==c); -->
+	  <!-- console.log(a!=b);} -->
+	  
+	  <!-- // 2. -->
+	  <!-- const s=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; -->
+	  <!-- for(let i=0; i<10; i++){ -->
+	     <!-- setTimeout(()=> console.log(s[i]),1000); -->
+	  <!-- } -->
+	  <!-- for(var i=0; i<10; i++){ -->
+	     <!-- setTimeout(()=> console.log(s[i]),1000); -->
+		 <!-- } -->
+		 
+	  <!-- // 3. -->
+	  
+	  <!-- // 5.  -->
+	  <!-- let hero={ -->
+	     <!-- powerLevel:99, -->
+		 <!-- getPower(){ -->
+		    <!-- return this.powerLevel; -->
+		 <!-- } -->
+	  <!-- } -->
+	  <!-- let get=hero.getPower(); -->
+	  <!-- console.log(get); -->
+	  
+	  <!-- //10. -->
+	  <!-- if(10>20 && 20>10){ -->
+	     <!-- console.log(10); -->
+	  <!-- } -->
+	  <!-- else{ -->
+	     <!-- console.log(20); -->
+	  <!-- } -->
+	  <!-- if(10<20 && 50%5==10){ -->
+	     <!-- console.log(30); -->
+	  <!-- } -->
+	  <!-- if(10!==20||50/0==0){ -->
+	     <!-- console.log(40); -->
+	  <!-- } -->
+	  
+	  <!-- // 11.  -->
+	  <!-- let sum=35; -->
+	  <!-- if(sum%10==0){ -->
+	     <!-- console.log("a"); -->
+	  <!-- } -->
+	  <!-- else if(sum%2==1){ -->
+	     <!-- if (sum%5==0 && sum%2==0){ -->
+		    <!-- console.log("b"); -->
+		 <!-- } -->
+		 <!-- else if(sum%5==0){ -->
+		    <!-- console.log("c") -->
+		 <!-- } -->
+		 <!-- else{ -->
+		    <!-- console.log("d") -->
+		 <!-- } -->
+	  <!-- } -->
+	  <!-- else{ -->
+	     <!-- console.log("e") -->
+	 <!-- } -->
+	 
+	 <!-- // 12. -->
+	<!-- { function myFunc(){ -->
+	    <!-- var a=b=3; -->
+	 <!-- } -->
+	 <!-- myFunc(); -->
+	 <!-- console.log("a defined?" + (typeof a !==`undefined`)); -->
+	 <!-- console.log("b defined?" + (typeof b !==`undefined`));} -->
+	  
+	 //19 FixBuzz
+	 for(d=1; d<=100; d++){
+	    if(d%3==0 && d%5==0){
+	       console.log("FixBuzz")
+	    }
+	    else if(d%5==0){
+	       console.log("Buzz")
+	    }
+	    else if(d%3==0){
+	       console.log("Fix")
+	    }
+		else{
+		   console.log(d)
+		}
+	 }
+	 //17.decimal or integer
+	 let e=5;
+	 if(e%2==0){
+	    console.log("integer")
+	 }
+	 else{
+	    console.log("decimal")
+	 }
+	  
+	  // 13.
+	  let arr=[5, 4, 9, 14, 96];
+	  document.write(arr.length);
+	  for(i=0; i<=arr.length; i++){
+	     if(arr[i]%2==0){
+		    console.log(arr[i])
+		 }
+	  }
+	  
+	  //14.
+	 
+		 const passengers=[
+			{
+			   id:1,
+			   passengerName:"Freddie Mercury",
+			   isVegetarianOrVegan:false,
+			   connectedFlights:2,
+			},
+			{
+			   id:2,
+			   passengerName:"Amy Winehouse",
+			   isVegetarianOrVegan:true,
+			   connectedFlights:4,
+			},
+			{
+			   id:3,
+			   passengerName:"Kurt Cotain",
+			   isVegetarianOrVegan:true,
+			   connectedFlights:3,
+			},
+			{
+			   id:4,
+			   passengerName:"Michael Jackson",
+			   isVegetarianOrVegan:true,
+			   connectedFlights:1,
+			}
+			];
+			 let emt=[];
+			passengers.forEach((pass)=>{
+			    let pas=pass.passengerName;
+			    emt.push(pas);
+				})
+				console.log(emt);
+		   
+	  
+   </script>
+</body>
+</html>
