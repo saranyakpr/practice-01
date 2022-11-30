@@ -109,31 +109,52 @@
 			   <!-- console.log("enter not index"); -->
 			<!-- } -->
 			
-			
-			let outLen,inLen,arr=[],opt,nVal,subArr=(len)=>{
-    let sub=[],subVal;
-    for(j=0;j<len;j++){
-        subVal=prompt("Enter the values of Array");
-        sub.push(subVal);
-    }
-    return sub;
-};
-outLen=prompt("Enter the main Array length ");
-for(i=0;i<outLen;i++){
-    opt=prompt("If array enter A ,if Num enter N");
-    if(opt=='N'){
-        nVal=prompt("Enter the Number ");
-        arr.push(nVal);    
-    }
-    else{
-        inLen=prompt("Enter the sub Array length ");
-        let resSub=[];
-        resSub=subArr(inLen);
-        arr.push(resSub);
-    }
-}
-console.log(arr);
-			
+			// object
+			let b=prompt("Enter a number")
+				let c;
+				v=object(b)
+		
+				
+		    function object(num){
+			   let brr=[];
+			    for(i=0;i<num;i++)
+				{
+				 c={
+				Name:"",
+				Age:"",
+				profession:""
+				};
+	
+	            e=prompt("Enter a name");
+				c.Name=e;
+				f=prompt("Enter a age");
+				c.Age=f;
+				g=prompt("Enter a profession");
+				c.profession=g;
+				brr[i]=c;
+				}
+				return brr;
+				}
+				console.log(v);
+				
+              
+				function name(arr){
+				   str1=prompt("Enter get the name");
+				  
+                for(i=0;i<arr.length;i++)
+                    {
+                      if(arr[i].Name===str1)
+                          {	
+                            console.log(arr[i]);
+                              }
+						   
+                        	
+                      }	
+					 
+					  
+                     return arr; 				  
+                }
+                y=name(v)
    
    
    </script>
