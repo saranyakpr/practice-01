@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>attribute</title>
+	<style>
+
+	   a[target="_blank"] {
+       background-color: yellow;          
+       }  
+	   
+	   h1[class|="flower"]{
+	   color:red;
+	   }
+	   
+	   [class*="s"]{
+	   color:blue;
+	   }
+	   
+	</style>
+</head>
+<!--     [attribute], [attribute="value"], [attribute~="value"], [attribute|="value"], [attribute^="value"], [attribute$="value"], [attribute*="value"],  -->
+<body>
+               
+   <a href="https://www.w3schools.com">w3schools.com</a>
+   <a href="http://www.disney.com" target="_blank">disney.com</a>
+   <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+   
+   <h1 class="text">flower</h1>
+   <h1 class="flower">flower</h1>
+   <h1 class="sun flower">flower</h1> 
+   
+   <h1 class="saran">Welcome</h1>
+   <p class="top-text">Hello world!</p>
+   <p class="topcontent">Are you learning CSS?</p> 
+   
+</body>
+</html>
