@@ -77,37 +77,62 @@
 			
 			// index of inner array 
 			
-			function obj(z){
-			   let b=[];
-			   for(i=0; i<z; i++){
-			      var d=prompt("enter inner length");
-				  if(d==0){
-				     d=prompt("enter number")
-				  }
-				  else{
-				     c=[];
-					 for(j=0; j<d; j++){
-					    var e=prompt("enter values");
-						c[j]=e;
-						b[i]=c;
-					 }
-				  }
-			   }
-			   return b;
-			}
+			<!-- function obj(z){ -->
+			   <!-- let b=[]; -->
+			   <!-- for(i=0; i<z; i++){ -->
+			      <!-- var d=prompt("enter inner length"); -->
+				  <!-- if(d==0){ -->
+				     <!-- d=prompt("enter number") -->
+				  <!-- } -->
+				  <!-- else{ -->
+				     <!-- c=[]; -->
+					 <!-- for(j=0; j<d; j++){ -->
+					    <!-- var e=prompt("enter values"); -->
+						<!-- c[j]=e; -->
+						<!-- b[i]=c; -->
+					 <!-- } -->
+				  <!-- } -->
+			   <!-- } -->
+			   <!-- return b; -->
+			<!-- } -->
 			
-			let a=prompt("enter main length");
-			let c;
-			let g=obj(a);
-			console.log(g);
-			let x=prompt("enter big index");
-			let y=prompt("enter inner index");
-			if(x<g.length){
-			   console.log(g[x][y]);
-			}
-			else{
-			   console.log("enter not index");
-			}
+			<!-- let a=prompt("enter main length"); -->
+			<!-- let c; -->
+			<!-- let g=obj(a); -->
+			<!-- console.log(g); -->
+			<!-- let x=prompt("enter big index"); -->
+			<!-- let y=prompt("enter inner index"); -->
+			<!-- if(x<g.length){ -->
+			   <!-- console.log(g[x][y]); -->
+			<!-- } -->
+			<!-- else{ -->
+			   <!-- console.log("enter not index"); -->
+			<!-- } -->
+			
+			
+			let outLen,inLen,arr=[],opt,nVal,subArr=(len)=>{
+    let sub=[],subVal;
+    for(j=0;j<len;j++){
+        subVal=prompt("Enter the values of Array");
+        sub.push(subVal);
+    }
+    return sub;
+};
+outLen=prompt("Enter the main Array length ");
+for(i=0;i<outLen;i++){
+    opt=prompt("If array enter A ,if Num enter N");
+    if(opt=='N'){
+        nVal=prompt("Enter the Number ");
+        arr.push(nVal);    
+    }
+    else{
+        inLen=prompt("Enter the sub Array length ");
+        let resSub=[];
+        resSub=subArr(inLen);
+        arr.push(resSub);
+    }
+}
+console.log(arr);
 			
    
    
