@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>loopTask</title>
+</head>
+<body>
+   <script>
+   
+     // 1.
+      for(x=1; x<=5; x++){ 
+	     for(y=1; y<=x; y++){ 
+	         document.write(x); 
+	     } 
+	     document.write("<br>"); 
+	   } 
+	   document.write("<br>");
+      
+	 // 2.
+	for(x=1; x<=5; x++){ 
+	   for(y=1; y<=5; y++){ 
+	      document.write(y); 
+	    } 
+	   document.write("<br>"); 
+	} 
+	document.write("<br>");
+	
+	// 3.
+	for(x=1; x<=5; x++){ 
+	   for(y=1; y<=2; y++){ 
+	      document.write(y); 
+	    } 
+	   document.write("<br>"); 
+	} 
+	document.write("<br>");
+	
+	
+	<!-- // 4. -->
+	 var a=prompt("enter a number")
+	 var b=prompt("enter b number")
+	 var c=prompt("enter c number")
+	 var d=prompt("enter d number")
+	
+	if(a>b){
+	   if(a>c){
+	      if(a>d){
+		    document.write("a is greater than")
+		  }
+		  else{
+		     document.write("d is greater than")
+		  }
+	   }
+	   else{
+	      if(c>d){
+		     document.write("c is greater than")
+		  }
+		  else{
+		     document.write("d is greater than")
+		  }
+	   }
+	}
+	else{
+	   if(b>c){
+	      if(b>d){
+		     document.write("b is greater than")
+		  }
+		  else{
+		     document.write("d is greater than")
+		  }
+	   }
+	   else{
+	      if(c>d){
+		     document.write("c is greater than")
+		  }
+		  else{
+		     document.write("d is greater than")
+		  }
+	   }
+	}
+	
+	
+	
+	
+	
+	
+   </script>
+</body>
+</html>

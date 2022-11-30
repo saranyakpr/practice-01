@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="login.css">
+	<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+	<title>operators</title>
+</head>
+<body>
+   <div class="form-box">
+      <h1>Login Here</h1>
+	  <div class="input-box">
+	     <input type="email" placeholder="Email or phoneNo">
+	  </div>
+	  <div class="input-box">
+	     <input type="password" placeholder="password" id="myInput">
+		 <span class="eye" onclick="myFuction()">
+		    <iconify-icon id="hide1" icon="mdi:eye-outline"></iconify-icon>
+			<iconify-icon id="hide2" icon="mdi:eye-off-outline"></iconify-icon>
+         </span>			
+	  </div>
+	  <button type="button" class="login">Login</button>
+   </div>
+
+   <script>
+      function myFuction(){
+	     var x=documet.getElementById("myInput");
+		 var y=documet.getElementById("hide1");
+		 var z=documet.getElementById("hide2");
+		 
+		 if(x.type==="password"){
+		    x.type="text";
+			y.style.display="block";
+			z.style.display="none";
+		}
+		else{
+		    x.type="password";
+			y.style.display="none";
+			z.style.display="block";
+		}
+	 }
+   </script>
+
+
+
+
+
+
+</body>
+</html>

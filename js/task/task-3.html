@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>interesting</title>
+</head>
+<body>
+   <script>
+      //swapping
+      let temp=0,a=2,b=3;
+	  temp=a;
+	  a=b;
+	  b=temp;
+	  document.write("swap is", a, b);
+	  document.write("<br>");
+	  document.write("<br>");
+	  
+	  //largest
+	  let largest;
+	  let c=2,d=-1,e=5;
+	  if(c>=d && c>=e){
+	     document.write("c is largest");
+	  }
+	  else if(d>=c && d>=e){
+		 document.write("d is largest");
+	  }
+	  else{
+	     document.write("e is largest");
+	  }
+	  document.write("<br>");
+	  document.write("<br>");
+	  
+	  //check positive
+	  let g=-3;
+	  if(g<0){
+	     document.write("not positive");
+	  }
+	  else{
+	     document.write("positive");
+	  }
+	  document.write("<br>");
+	  document.write("<br>");
+	  
+	  //check greater than 10
+	  let num=6;
+	  if(num>10){
+	     document.write("greater than 10");
+	  }
+	  else{
+	     document.write("not greater than 10");
+	  }
+	  document.write("<br>")
+	  document.write("<br>");
+	  
+	  // even or odd
+	  let num1=7;
+	  if(num1%2==0){
+	     document.write("number is even");
+	  }
+	  else{
+	     document.write("number is odd");
+	  }
+	  document.write("<br>")
+	  document.write("<br>");
+	  
+	  //divisible by 5
+	  let divi=20;
+	  if(divi%5==0){
+	     document.write("divisible by 5");
+	  }
+	  else{
+	     document.write("not divisible by 5");
+	 }
+	 document.write("<br>")
+	 document.write("<br>");
+	 
+	 //multible by 7
+	  let mul=15;
+	  if(mul%7==0){
+	     document.write("multible by 7");
+	  }
+	  else{
+	     document.write("not multible by 7");
+	 }
+	 document.write("<br>")
+	 document.write("<br>");
+	 
+	 //grade
+	 let total=8;
+	 if(total>=8 && total<=10){
+	    document.write("grade:A");
+	 }
+	 else if(total>=6 && total<=8){
+	    document.write("grade:B");
+     }
+	 else{
+	    document.write("grade:C");
+	 }
+	 document.write("<br>")
+	 document.write("<br>");
+	 
+	 //marriage eligibility
+	 let age=16;
+	 if(age>=18){
+	    document.write("eligibility to marriage");
+	 }
+	 else{
+	    document.write("not eligibility to marriage");
+	 }
+	    document.write("<br>");
+		document.write("<br>");
+	
+	 
+	 //N numbers in sequence
+	for(s=1; s<=10; s++){
+	    document.write(s);
+	 }
+	 document.write("<br>");
+	 document.write("<br>");
+	 
+	 //N numbers in reverse order
+	 for(r=10; r>=1; r--){
+	    document.write(r);
+	 }
+	 document.write("<br>");
+	 document.write("<br>");
+	 
+	 //first N even numbers
+	 for(e=2; e<=10; e++)
+	    if(e%2==0){
+	    document.write(e);
+	 }
+	 document.write("<br>");
+	 document.write("<br>");
+	 
+	  //first N odd numbers
+	 for(o=1; o<=10; o++)
+	    if(o%2!==0){
+	    document.write(o);
+	 }
+	 document.write("<br>");
+	 document.write("<br>");
+	 
+	 //swap
+	 function swap(num1,num2){
+	    let t=num1; num1=num2; num2=t;
+		document.write(num1,num2);
+	 }
+	 swap(2,3)
+	 document.write("<br>");
+     document.write("<br>");	 
+	
+     //pattern
+	 	for(i=65;i<=73;i++){
+           for(k=72;k>=i;k--){
+                 document.write("&nbsp");    
+             }
+             for(j=65;j<=i;j++){
+                 if(i%2==0){
+                     continue;
+                 }
+                 document.write(String.fromCharCode(j)); 
+           }
+            document.write("<br>");
+		}
+   </script>
+</body>
+</html>

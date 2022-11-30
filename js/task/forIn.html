@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>forIn</title>
+</head>
+<body>
+  <script>
+     
+	 <!-- //forIn o/p=key     -->
+     <!-- const fruits={ -->
+	    <!-- name:"mango", -->
+		<!-- color:"yellow", -->
+		<!-- price:150, -->
+		<!-- Scientificname:"Casjews" -->
+     <!-- }; -->
+	 <!-- for(let fru in fruits){ -->
+	    <!-- console.log(fru); -->
+	<!-- } -->
+	
+     <!-- //forIn o/p=key+value -->
+     <!-- const details={ -->
+	    <!-- name:"saran", -->
+		<!-- age:21, -->
+		<!-- profession:"developer", -->
+		<!-- location:"tenkasi", -->
+		<!-- mobile:8754668220 -->
+     <!-- }; -->
+	 <!-- for(let det in details){ -->
+	    <!-- console.log(det + ":" + details[det]); -->
+	<!-- } -->
+	
+	 <!-- //forIn  o/p=index -->
+	<!-- let number=['one', 'two', 'three', 'four']; -->
+	<!-- for(let num in number){ -->
+	   <!-- console.log(num); -->
+	<!-- } -->
+	
+	<!-- //forOf   o/p=value -->
+	<!-- let number1=['one', 'two', 'three', 'four']; -->
+	<!-- for(let num1 of number1){ -->
+	   <!-- console.log(num1); -->
+	<!-- } -->
+	
+	//array of object
+	<!-- const person=[ -->
+	 <!-- { -->
+	   <!-- name:"saranya", -->
+	   <!-- age:21, -->
+	   <!-- profession:"developer" -->
+	 <!-- } -->
+	 <!-- { -->
+	   <!-- name:"saran", -->
+	   <!-- age:20, -->
+	   <!-- profession:"develop" -->
+	 <!-- } -->
+	<!-- ]; -->
+	<!-- for(let per in person){ -->
+	   <!-- console.log(per); -->
+	<!-- } -->
+	
+	//constructor
+	function nick(name,color,last){
+	   this.Name=name;
+	   this.Color=color;
+	   this.Last=last;
+	}
+	let fav=new nick("saran", "blue", "saranya")
+	console.log(fav);
+	
+	<!-- //settimeout -->
+	function welcome(){
+	   document.write("saran");
+	   document.write("<br>");
+	}
+	setInterval(welcome,3000);
+	   
+	 
+	 
+	 
+	 
+	 
+	
+  </script>
+</body>
+</html>

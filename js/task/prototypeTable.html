@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>prototype</title>
+</head>
+<style>
+   table,th,tr,td{
+   border: 1px solid red;
+   <!-- border-collapse:collapse; -->
+   }
+   th{
+   font-size:1.5rem;
+   }
+   th, td{
+   padding:15px;
+   }
+  </style>
+<body>
+    <table>
+	<tr>
+	   <th>Prototype </th>
+	   <th>definition</th>
+	   <th>input</th>
+	   <th>output</th>
+	</tr>
+	<tr>
+	   <th>concat()</th>
+	   <td>join two or more strings</td>
+	   <td>const arr1=["cecilie", "lone"]
+	       const arr2=["emil", "tobias"]</td>
+	   <td>array=["cecilie", "lone""emil", "tobias"]</td>
+	</tr>
+	<tr>
+	   <th>filter()</th>
+	   <td>creates a new array filled with elements</td>
+	   <td>const ages=[20, 18, 3, 5]
+	       value>=10</td>
+	   <td>20,18</td>
+	</tr>
+	<tr>
+	   <th>findIndex()</th>
+	   <td>returns the index of the first element in an array that satisfies the provided testing function</td>
+	   <td> const items=[
+	   {id:1, item:"Android Mobile", cost:6500},
+	   {id:2, item:"iPhone Mobile", cost:30000},
+	   {id:3, item:"Window Mobile", cost:9000},
+	];
+	let item2=items.findIndex(function(value){
+	   return value.cost>10000;}</td>
+	   <td>0</td>
+	</tr>
+	<tr>
+	   <th>forEach()</th>
+	   <td>Not use return value</td>
+	   <td>const flowers=["rose", "lotus", "lilly"];
+	  flowers.forEach(function(flower,index,array){
+	     console.log(flower);
+		 console.log(index);
+		 console.log(array);
+	  });</td>
+	   <td>rose,0,(3)['rose', 'lotus', 'lilly']
+	       lotus,1,(3)['rose', 'lotus', 'lilly']
+		   lilly,2,(3)['rose', 'lotus', 'lilly']</td>
+	</tr>
+	<tr>
+	   <th>map()</th>
+	   <td>It returns a new array</td>
+	   <td>const animals=["lion", "tiger", "bear", "deer"];
+	  const newArr=animals.map(function(animal){
+	     return animal.toUpperCase();
+	 });</td>
+	   <td>["LION", "TIGER", "BEAR", "DEER"]</td>
+	</tr>
+	<tr>
+	   <th>push()</th>
+	   <td>adds one or more elements to the end</td>
+	   <td>let arr=[1, 2, 3, 4];
+	       arr.push=[2,3]</td>
+	   <td>array=[1, 2, 3, 4, 2,3]</td>
+	</tr>
+	<tr>
+	   <th>unshift()</th>
+	   <td>add one or more elements to the start</td>
+	   <td>let arr=[1, 2, 3, 4];
+	       arr.unshift=[2,3]</td>
+	   <td>array=[2, 3, 1, 2, 3, 4]</td>
+	</tr>
+	<tr>
+	   <th>splice()</th>
+	   <td>add one or more elements to our wish place</td>
+	   <td>let arr=[1, 2, 3, 4];
+	        arr.splice=(2,0, 2,3)</td>
+	   <td>array=[1, 2, 2, 3, 3, 4]</td>
+	</tr>
+	<tr>
+	   <th>findLastIndex()</th>
+	   <td>returns the last index at which a given element can be found in the array, or -1 if it is not present</td>
+	   <td>fruits=["apple", "mango", "orange", "apple"];
+	        fruits.findLastIndex("apple")</td>
+	   <td>3</td>
+	</tr>
+	<tr>
+	   <th>length()</th>
+	   <td>A property of arrays in JavaScript that returns or sets the number of elements in a given array</td>
+	   <td>array=[1, 2, 3, 4, 5];
+	        array.length</td>
+	   <td>5</td>
+	</tr>
+	<tr>
+	   <th>pop()</th>
+	   <td>removes the last element from an array and returns that element.</td>
+	   <td>array=[1, 2, 3, 4, 5];
+	        array.pop</td>
+	   <td>array=[1, 2, 3, 4]</td>
+	</tr>
+	<tr>
+	   <th>reduce()</th>
+	   <td> executes a user-supplied "reducer" callback function on each element of the array</td>
+	   <td>array=[1, 3, 5, 8];
+	       initialValue=3;
+		   reduce=array+iniitialValue</td>
+	   <td>20</td>
+	</tr>
+	<tr>
+	   <th>shift()</th>
+	   <td>removes the first element from an array and returns that removed element.</td>
+	   <td>array=[1, 2, 3, 4, 5, 6];
+	       array.shift();</td>
+	   <td>1, array=[2, 3, 4, 5, 6]</td>
+	</tr>
+	<tr>
+	   <th>reverse()</th>
+	   <td>The reverse() method reverses the order of the elements in an array. The reverse() method overwrites the original array.</td>
+	   <td>array=[1, 2, 3, 4, 5];
+	       array.reverse()</td>
+	   <td>array=[5,4, 3, 2, 1]</td>
+	</tr>
+	<tr>
+	   <th>localTimeString()</th>
+	   <td>The toLocaleTimeString() method returns the time portion of a date object as a string, using locale conventions</td>
+	   <td>const date=new Date();
+	       console.log(date.localTimeString);</td>
+	   <td>16:05:22 PM</td>
+	</tr>
+	<tr>
+	   <th>toString()</th>
+	   <td>The toString() method returns a string as a string. This method does not change the original string.</td>
+	   <td>let array="hi hello"
+	       let arr=array.toString();
+		   console.log(arr);</td>
+	   <td>hi hello</td>
+	</tr>
+	<tr>
+	   <th>indexOf()</th>
+	   <td>The indexOf() method returns the position of the first occurrence of a value in a string. The indexOf() method returns -1 if the value is not found.</td>
+	   <td>let array=["apple","mango", "orange", "graps", "banana"];
+	       let arr=array.indexOf(mango);
+		   console.log(arr);</td>
+	   <td>1</td>
+	</tr>
+	<tr>
+	   <th>constructor()</th>
+	   <td></td>
+	   <td></td>
+	   <td></td>
+	</tr>
+	<tr>
+	   <th>slice()</th>
+	   <td>returns a shallow copy of a portion of an array into a new array object selected from start to end</td>
+	   <td>const array=["apple","mango", "orange", "graps", "banana"];
+	       const arr=array.slice(2, -2)</td>
+	   <td>orange</td>
+	</tr>
+	<tr>
+	   <th>fill()</th>
+	   <td>The fill() method fills specified elements in an array with a value.The fill() method overwrites the original array.</td>
+	   <td>const fil=[1, 2, 3, 4, 5];
+	       const filll= fil.fill("apple");
+	       console.log(filll);</td>
+	   <td>(5) ['apple', 'apple', 'apple', 'apple', 'apple']</td>
+	</tr>
+	<tr>
+	   <th>()</th>
+	   <td></td>
+	   <td>const array=["apple","mango", "orange", "graps", "banana"];
+	       const arr=array.slice(2, -2)</td>
+	   <td>orange</td>
+	</tr>
+	</table>
+</body>
+</html>

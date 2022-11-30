@@ -1,0 +1,167 @@
+body{
+	background-color:white;
+}
+.item{
+	display:flex;
+	flex:row;
+	align-items:center;
+}
+.head{
+	color:green;
+	width:30%;
+	text-align:center;
+	font-size:25px;
+}
+.nap{
+	width:70%;
+	height:50%;
+	text-align:center;
+	font-size:20px;
+	
+}
+.nap1{
+	text-decoration:none;
+	padding:10px;
+}
+
+.button{
+	color:white;
+	background-color:green;
+	border-radius:45px;
+	font-size:15px;
+	padding:8px;
+	text-decoration:none;
+}
+.head-a{
+	float:left;
+	width:35%;
+	text-align:center;
+}
+.head-b{
+	float:right;
+	text-decoration:none;
+	width:65%;
+	text-align:center;
+	text-decoration:none;
+}
+p{
+	float:left;
+	width=50%;
+}
+img{
+	float:right;
+	width:100%;
+	height:100%;
+}
+.paraimg{
+	display:flex;
+	flex-direction:row;
+	font-size:25px;
+}
+.para{
+	display:flex;
+	flex-direction:column;
+	width:50%;
+}
+.img{
+	width:50%;
+}
+.num{
+	display:flex;
+	flex-direction:row;
+}
+.num1{
+	padding:150px;
+}
+.num2{
+	font-size:50px;
+	color:green;
+}
+.item1{
+	color:green;
+	background-color:white;
+	border-radius:50%;
+	text-decoration:none;
+	padding:15px;
+}
+.rows{
+	display:flex;
+	flex-direction:row;
+	text-align:center;
+	font-size:20px;
+}
+.s{
+	width:left;
+	background-color:green;
+	float:left;
+	text-align:center;
+	color:white;
+	width:30%
+}
+.row{
+	display:flex;
+	flex-direction:row;
+	float:right;
+	width:70%;
+}
+.div{
+	display:flex;
+	flex-direction:column;
+}
+.div1{
+	display:flex;
+	flex-direction:row;
+	font-size:25px;
+
+}
+.div2{
+	display:flex;
+	flex-direction:row;
+	font-size:25px;
+}
+	
+.div3{
+	display:flex;
+	flex-direction:row;
+	font-size:25px;
+}
+.diva{
+	padding:80px;
+	height:0px;
+}
+.course{
+	font-size:25px;
+}
+.courses{
+	display:flex;
+	flex-direction:row;
+	width:95%;
+	height:100%;
+	margin-left:35px;
+	font-size:25px;
+	margin-top:50px;
+}
+.coursesa{
+	width:31%;
+	height:90%;
+	display:flex;
+	flex-direction:column;
+}
+.coursesb{
+	width:41%;
+	height:40%;
+	display:flex;
+	flex-direction:column;
+}
+.coursesc{
+	width:31%;
+	height:90%;
+	display:flex;
+	flex-direction:column;
+}
+
+
+
+
+
+

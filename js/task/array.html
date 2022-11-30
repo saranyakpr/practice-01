@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>array</title>
+</head>
+<body>
+   <script>
+      <!-- let fruits=["mango", "apple", "banana", "watermelon"]; -->
+	  <!-- document.write(fruits[2]); -->
+	  <!-- document.write("<br>"); -->
+	  
+	  <!-- length=fruits.length -->
+	  <!-- document.write(length); -->
+	  <!-- document.write("<br>"); -->
+	  
+	  <!-- for(i=0; i<length; i++){ -->
+	     <!-- document.write(fruits[i]); -->
+		 <!-- document.write("<br>"); -->
+	  <!-- } -->
+	  
+   // new task
+   
+   <!-- let arr1=prompt("Enter a number"); -->
+   <!-- let arr2=[]; -->
+   <!-- for(i=0; i<arr1; i++){ -->
+	  <!-- arr2[i]=prompt("Enter a number"); -->
+   <!-- } -->
+   <!-- console.log(arr2); -->
+   
+   //create
+   
+		  <!-- d=prompt("Enter d value"); -->
+		  <!-- let arr=[]; -->
+		  <!-- let c; -->
+		  <!-- for(i=0; i<d; i++){ -->
+			 <!-- b=prompt("Enter b value"); -->
+			 <!-- if(b==0){ -->
+			   <!-- arr[i]=prompt("enter i value"); -->
+			 <!-- } -->
+			 <!-- else{ -->
+			 <!-- for(j=0; j<b; j++){ -->
+			    <!-- c=[]; -->
+				<!-- c[i]=prompt("Enter the value"); -->
+			 <!-- } -->
+				<!-- arr[i]=c; -->
+		  <!-- } -->
+		      <!-- } -->
+		  <!-- console.log(arr); -->
+		  
+	//read
+	
+	<!-- let d=prompt("enter value"); -->
+		<!-- num=array(d); -->
+		<!-- console.log(num); -->
+		
+		<!-- function array(a) -->
+		<!-- { -->
+		    <!-- let arr=[]; -->
+				<!-- for(i=0; i<a; i++) -->
+				<!-- { -->
+					<!-- b=prompt("enter number"); -->
+					<!-- arr[i]=b; -->
+				<!-- } -->
+			<!-- return arr; -->
+		<!-- } -->
+			<!-- x=prompt("enter a index"); -->
+			<!-- if(num[x]) -->
+			<!-- { -->
+			    <!-- console.log(num[x]) -->
+			<!-- } -->
+			<!-- else{ -->
+			    <!-- console.log("not found") -->
+			<!-- } -->
+			
+			// index of inner array 
+			
+			function obj(z){
+			   let b=[];
+			   for(i=0; i<z; i++){
+			      var d=prompt("enter inner length");
+				  if(d==0){
+				     d=prompt("enter number")
+				  }
+				  else{
+				     c=[];
+					 for(j=0; j<d; j++){
+					    var e=prompt("enter values");
+						c[j]=e;
+						b[i]=c;
+					 }
+				  }
+			   }
+			   return b;
+			}
+			
+			let a=prompt("enter main length");
+			let c;
+			let g=obj(a);
+			console.log(g);
+			let x=prompt("enter big index");
+			let y=prompt("enter inner index");
+			if(x<g.length){
+			   console.log(g[x][y]);
+			}
+			else{
+			   console.log("enter not index");
+			}
+			
+   
+   
+   </script>
+</body>
+</html>

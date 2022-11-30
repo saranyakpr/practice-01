@@ -9,13 +9,17 @@
 <body>
   
      <button onclick="myFunction()">Click</button>
-     <h2 class="me">It's me</h2>
+     <h2></h2>
    <script>
    function myFunction(){
- 
+   
+   let head=document.createElement("h2");
+   head.innerHTML="heading";
+   document.body.appendChild(head);
+   console.log(head);
+   
    let unorderedList=document.createElement("ul");
-   document.body.appendChild(unorderedList);
-   console.log(unorderedList);
+   head.appendChild(unorderedList);
    
    let listItem1=document.createElement("li");
    listItem1.textContent="saran";

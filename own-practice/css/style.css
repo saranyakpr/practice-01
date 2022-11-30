@@ -1,0 +1,32 @@
+body{
+	  text-align:center;
+		}
+header,footer{
+	     padding:8px;
+		 }
+header{
+	    background-color:red;
+		}
+#head-a{
+	    background-color:yellow;
+		flex-basis:400px;
+		}
+#head-b{
+	    background-color:orange;
+		flex-basis:400px;
+		}
+#head-c{
+	    background-color:cadetblue;
+		flex-basis:400px;
+		}
+aside{
+	    background-color:cyan;
+		text-align:center;
+		}
+footer{
+	    background-color:darkgray;
+		}
+.flex-container{
+	    display: flex;
+		flex-direction:row;
+		}
