@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>getElementByName</title>
+</head>
+<body>
+
+   <input type="radio" name="saran" value="one">1
+   <input type="radio" name="saran" value="two">2
+   <input type="radio" name="saran" value="three">3</br></br>
+   <button id="btn" onclick="cal()">click</button>
+   <h3 id="cont"></h3>
+
+   <script>
+   
+   var cont=document.getElementById("cont");
+   var btn=document.getElementById("btn");
+   
+   function cal(){
+      let a=document.getElementsByName("saran");
+	  a.forEach((saran)=>{
+	     if(saran.checked){
+		    cont.innerText=`${"you clicked " +  saran.value}`;
+		 }
+	  })
+	  console.log(a);
+   }
+   
+   
+   </script>
+</body>
+</html>
