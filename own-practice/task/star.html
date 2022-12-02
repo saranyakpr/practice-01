@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>interesting</title>
+</head>
+<body>
+   <script>
+	 
+	for(x=1; x<=5; x++){ 
+	   for(y=1; y<=x; y++){ 
+	      document.write("*"); 
+	    } 
+	   document.write("<br>"); 
+	} 
+	
+	for(x=5; x>=0; x--){ 
+	   for(y=1; y<=x; y++){ 
+	      document.write("*"); 
+	    } 
+	   document.write("<br>"); 
+	} 
+	
+	
+	 let array=[[1,2,3],[1,2,4],[1,4,3]];
+	 
+	 for(i=0; i<array.length; i++){
+	    console.log(array[i]);
+		document.write("<br>")
+	 }
+	 
+	for(j=0; j<array.length; j++){
+	 result=array[j].reduce((prev,curr)=>{
+	    return(prev+curr)
+	 })
+	 console.log(result);
+	 }
+	 
+	 let newa=[1,2,3];
+	 const newarray=newa.push("4");
+	 console.log(newarray);
+	 
+	
+	
+   </script>
+</body>
+</html>
