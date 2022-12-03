@@ -26,6 +26,7 @@ body{
 	background-color:black;
 }
    /* header top end */
+   /* header name start */
 .headLink{
 	display:none;
 }
@@ -48,11 +49,48 @@ body{
 	color:white;
 	font-size:1.5rem;
 }
-
+   /* header name end */
+   /* head start */
+.mainHeadOut{
+	background-image:url("img/day.jpg");
+	background-size:cover;
+	background-position:fixed;
+}
+.mainHeadIn h2{
+	padding-top:7rem;
+	font-size:1.7rem;
+	padding-bottom:1.5rem;
+}
+.mainHeadIn p{
+	font-size:1.1rem;
+	padding-bottom:1rem;
+	line-height:1.5rem;
+	margin-bottom:1.5rem;
+}
+.mainHeadIn a{
+	text-decoration:none;
+	color:white;
+	border:1px solid white;
+	padding:.5rem;
+}
+.mainHeadIn a:hover{
+	background-color:#CC1616;
+}
+.mainHeadIn{
+	color:white;
+	text-align:center;
+	padding-bottom:6rem;
+}
+   /* head end */
+   
+   
+   
+   
 	
 	
 }
 @media (min-width:768px){
+	/* header top start */
 .headIcon2{
 	display:block;
 	color:#A3A3A3;
@@ -74,6 +112,8 @@ body{
 	padding:.5rem;
 }
    /* header top end */
+   /* header name start */
+   /* header name end */
 	
 	
 }
@@ -83,6 +123,39 @@ body{
 	font-size:1.3rem;
 }
    /* header top end */
+    /* header name start */
+.burger{
+	display:none;
+}
+.headLink{
+	display:block;
+}
+.headLink a{
+	color:white;
+	text-decoration:none;
+	padding:.5rem;
+}
+.solo{
+	background-color:#CC1616;
+}
+.headLink a:hover{
+	background-color:#CC1616;
+}
+   /* header name end */
+   /* header start */
+.mainHeadIn h2{
+	font-size:3rem;
+	margin-left:4rem;
+}
+.mainHeadIn p{
+	font-size:1.5rem;
+	margin-left:4rem;
+}
+.mainHeadIn{
+	padding-top:5rem;
+	padding:8.5rem;
+}
+   /* header end */
 	
 	
 	
