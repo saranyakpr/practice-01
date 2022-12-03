@@ -5,3 +5,85 @@
 body{
 	font-family:sans-serif;
 }
+@media (min-width:320px){
+    /* header top start */
+.headIcon1{
+	display:flex;
+	padding-bottom:.5rem;
+	padding-top:.5rem;
+}
+.headIcon1 iconify-icon{
+	color:#CC1616;
+	font-size:1rem;
+}
+.headIcon1 p{
+	color:#A3A3A3;
+}
+.headIcon2{
+	display:none;
+}
+.headerOut{
+	background-color:black;
+}
+   /* header top end */
+.headLink{
+	display:none;
+}
+.headNameIn{
+	display:flex;
+	justify-content:space-between;
+}
+.headNameOut{
+	background-color:#252525;
+}
+.headNameIn{
+	padding-bottom:1rem;
+	padding-top:1rem;
+}
+.headName{
+	color:white;
+	font-size:2rem;
+}
+.burger{
+	color:white;
+	font-size:1.5rem;
+}
+
+	
+	
+}
+@media (min-width:768px){
+.headIcon2{
+	display:block;
+	color:#A3A3A3;
+}
+.headerIn{
+	display:flex;
+	justify-content:space-between;
+}
+.headIcon1{
+	padding-bottom:.5rem;
+	padding-top:.9rem;
+}
+.headIcon2{
+	padding-bottom:.5rem;
+	padding-top:.5rem;
+	font-size:1.1rem;
+}
+.headIcon2 iconify-icon{
+	padding:.5rem;
+}
+   /* header top end */
+	
+	
+}
+@media (min-width:1024px){
+   /* header top start */
+.headerOut iconify-icon{
+	font-size:1.3rem;
+}
+   /* header top end */
+	
+	
+	
+}
