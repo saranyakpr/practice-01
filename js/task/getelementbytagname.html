@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
 	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<title>getElementByName</title>
+	<title>getElementsByName</title>
 </head>
 <body>
 
-   <h1>this is h1 tag</h1>
-   <h2>this is h2 tag</h2>
-   <h3>this is h3 tag</h3>
-   <p>this is p tag</p>
-   <h2>this is h2 tag</h2>
-   <p>this is p tag</p>
-   <button onclick="cal()">click</button>
+   <!-- <h1>this is h1 tag</h1> -->
+   <!-- <h2>this is h2 tag</h2> -->
+   <!-- <h3>this is h3 tag</h3> -->
+   <!-- <p>this is p tag</p> -->
+   <!-- <h2>this is h2 tag</h2> -->
+   <!-- <p>this is p tag</p> -->
+   <!-- <button onclick="cal()">click</button> -->
+   
+   <input id="id" type="password">
+   <button  onclick="cal()">click</button>
    
    <script>
+   document.getElementById("id")
+   function cal(){
+      id.type="text";
+   }
       
-	  let heading = document.getElementsByTagName("h1");
+	  <!-- let heading = document.getElementsByTagName("h1"); -->
 	  
-	  function cal(){
-	     alert("h1 count " + heading.length);
-	  }
+	  <!-- function cal(){ -->
+	     <!-- alert("h1 count " + heading.length); -->
+	  <!-- } -->
+	  
+	 <!-- let head=document.getElementById("id"); -->
+	 <!-- head.innerHTML=(prompt("enter value")); -->
+	 <!-- head.setAttribute(prompt("enter attribute"),prompt("enter property")+":"+prompt("enter value")); -->
 	  
 	  
    </script>
