@@ -53,11 +53,14 @@ body{
    /* head start */
 .mainHeadOut{
 	background-image:url("img/day.jpg");
+	width:100%;
+	height:85vh;
 	background-size:cover;
 	background-position:fixed;
+	margin-bottom:2rem;
 }
 .mainHeadIn h2{
-	padding-top:7rem;
+	padding-top:5rem;
 	font-size:1.7rem;
 	padding-bottom:1.5rem;
 }
@@ -82,6 +85,27 @@ body{
 	padding-bottom:6rem;
 }
    /* head end */
+   /* about start */
+.abtOut{
+	background-color:white;
+	margin-top:3rem;
+}
+.abtIn h2{
+	margin-bottom:1rem;
+	font-size:1.6rem;
+	color:#444444;
+	line-height:1.8rem;
+}
+.abtIn p{
+	color:#444444;
+	margin-bottom:1rem;
+	line-height:1.5rem;
+}
+.abtIn p iconify-icon{
+	color:#CC1616;
+	font-size:1.5rem;
+}
+   /* about end */
    
    
    
@@ -113,7 +137,13 @@ body{
 }
    /* header top end */
    /* header name start */
+.mainHeadIn h2{
+	padding-top:7rem;
+}
    /* header name end */
+   /* about start */
+   
+   /* about end */
 	
 	
 }
@@ -145,17 +175,22 @@ body{
    /* header start */
 .mainHeadIn h2{
 	font-size:3rem;
-	margin-left:4rem;
+	margin-top:-4rem;
 }
 .mainHeadIn p{
 	font-size:1.5rem;
-	margin-left:4rem;
 }
 .mainHeadIn{
-	padding-top:5rem;
 	padding:8.5rem;
 }
    /* header end */
+   /* about start */
+   
+   /* about end */
+	
+	
+	
+	
 	
 	
 	
