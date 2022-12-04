@@ -18,30 +18,41 @@
 	
 	for(x=5; x>=0; x--){ 
 	   for(y=1; y<=x; y++){ 
-	      document.write("*"); 
+	      console.log("*"); 
 	    } 
-	   document.write("<br>"); 
+	   console.log("<br>"); 
 	} 
 	
 	
-	 let array=[[1,2,3],[1,2,4],[1,4,3]];
+	 let array=[[1,2,3],[1, 2, 3, 5, 4],[1,4,3, 5]];
 	 
 	 for(i=0; i<array.length; i++){
-	    console.log(array[i]);
+	    for(j=0; j<array.length; j++){
+	    console.log(array[i][j]);
 		document.write("<br>")
+	    }
 	 }
 	 
-	for(j=0; j<array.length; j++){
-	 result=array[j].reduce((prev,curr)=>{
-	    return(prev+curr)
-	 })
-	 console.log(result);
+	<!-- for(j=0; j<array.length; j++){ -->
+	 <!-- result=array[j].reduce((prev,curr)=>{ -->
+	    <!-- return(prev+curr) -->
+	 <!-- }) -->
+	 <!-- console.log(result); -->
+	 <!-- } -->
+	 
+	 <!-- let newa=[1,2,3]; -->
+	 <!-- newa.push("4"); -->
+	 <!-- console.log(newa); -->
+	 
+	 let a=[[1,2,3],[2,3,4],[4,5,6]];
+	 for(i=0;i<a.length; i++){
+	    for(j=0; j<a.length; j++){
+	    console.log(a[i])
+	    }
+		console.log(a[i])
 	 }
 	 
-	 let newa=[1,2,3];
-	 const newarray=newa.push("4");
-	 console.log(newarray);
-	 
+	
 	
 	
    </script>
