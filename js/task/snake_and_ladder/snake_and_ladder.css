@@ -5,7 +5,7 @@ body{
 	border:.1px solid black; 
 }
 .red{
-	float:left;
+	float:right;
 	height:6rem;
 	width:6rem;
 	border:.1px solid black;
@@ -16,7 +16,7 @@ body{
 	align-items:center;
 }
 .blue{
-	float:left;
+	float:right;
 	height:6rem;
 	width:6rem;
 	border:.1px solid black;
@@ -27,7 +27,7 @@ body{
 	align-items:center;
 }
 .green{
-	float:left;
+	float:right;
 	height:6rem;
 	width:6rem;
 	border:.1px solid black;
@@ -38,7 +38,7 @@ body{
 	align-items:center;
 }
 .yellow{
-	float:left;
+	float:right;
 	height:6rem;
 	width:6rem;
 	border:.1px solid black;
@@ -49,7 +49,7 @@ body{
 	align-items:center;
 }
 .white{
-	float:left;
+	float:right;
 	border:.1px solid black;
 	height:6rem;
 	width:6rem;
