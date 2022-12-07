@@ -8,10 +8,41 @@
 	<title>bmi</title>
 </head>
 <body>
+   <script>
+   let btn=document.getElementById("btn");
+   
+   btn.addEventlistener("click" ()=>{
+       let height=parseInt(document.getElementById("height").value)
+	   let weight=parseInt(document.getElementById("weight").value)
+	   let output=document.getElementById("output")
+	   
+	if(height && weight){
+	   let bmi=(weight/((height*height)/10000)).tofixed(2);
+	   
+	   if(bmi < 18.6){
+	      output.innerHTML = "under weight :" + bmi;
+	   }
+	   else if(bmi > 18.6 && bmi < 24.9){
+	      output.innerHTML = "normal :" + bmi;
+	   }
+	   else{
+	      output.innerHTML = "over weight :" + bmi;
+	   }
+	}
+	else{
+	   output.innerHTML = "";
+	}
+   });
+   
+      
+   </script>
+
+
    <div class="bmi">
-      <p>Height in cm :<input type="text"><p>
-      <p>weight in kg :<input type ="text"></p>
-	  <button>calculate</button>
+      <p id="height">Height in cm :<input type="text"><p>
+      <p id="weight">weight in kg :<input type ="text"></p>
+	  <button id="btn">calculate</button>
+	  <p id="output"></p>
    </div>
 </body>
 </html>
