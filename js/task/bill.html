@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>bill</title>
+</head>
+<body>
+   <p>bill amount : <input type="text" id="bill"></p>
+   <p>tips %: <input type="text" id="tips"></p>
+   <p>tips amount : <input type="number" id="tAmount"></p>
+   <p>total : <input type="number" id="total"></p>
+   <button id="btn">calculate</button>
+   
+   <script>
+  
+   let btn=document.getElementById("btn");
+   btn.addEventListener("click", myfun)
+   function myfun(){
+      let bill=document.getElementById("bill").value;
+      let tips=document.getElementById("tips").value;
+	  let a=(tips/100)*bill;
+	  let x=document.getElementById("tAmount").value=a;
+
+	  b=(parseInt(bill)+parseInt(x));
+	  document.getElementById("total").value=b;
+	  
+	   if (bill==="" || isNaN(bill)){
+	     alert("please enter your valid amount");
+	  }
+	  if(tips==="" || isNaN(tips)){
+	     alert("enter your valid tips percentage")
+	  }
+   }
+   
+  
+   
+   
+   
+   
+   </script>
+</body>
+</html>
