@@ -1,0 +1,13 @@
+body{
+   margin:0;
+   padding:0;
+   background-color:black;
+   color:white;
+}
+.bmi{
+	margin-top:20%;
+	margin-left:40%;
+}
+.bmi p{
+	font-size:1.5rem;
+}
