@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <title>todo</title>
+	<style>
+	.main{
+	   display:flex;
+	   gap:10rem;
+	}
+	
+	
+	</style>
+</head>
+<body>
+   <section class="main">
+      <div id="main1">
+	     <textarea id="textarea" rows=20; cols=50;></textarea>
+		 <button id="btn">click</button>
+	  </div>
+	  <div id="main2">
+	     
+	  </div>
+   </section>
+
+   <script>
+      var btn=document.getElementById("btn");
+	  
+	  btn.addEventListener("click", myfun);
+	  function myfun(){
+	     let textarea=document.getElementById("textarea");
+	     let p=document.createElement("p");
+		 let div2=document.getElementById("main2");
+		 div2.appendChild(p);
+		 p.innerHTML=textarea.value;
+		 let edit=document.createElement("button");
+		 p.appendChild(edit);
+		 edit.innerHTML=("edit")
+		 edit.setAttribute("class", "editCont");
+		 let del=document.createElement("button");
+		 p.appendChild(del);
+		 del.innerHTML="delete"
+		 del.setAttribute("class", "del");
+		 
+		 
+	  }
+	  
+   
+   
+   
+   </script>
+   
+</body>
+</html>
