@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <title>seminar</title>
+</head>
+<body>
+   <script>
+        // concat  output, return=1,2,3,4,5,6 
+	   let arr1=[1, 2, 3];
+	   let arr2=[4, 5, 6];
+	   let array=arr1.concat(arr2);
+	   document.write(array);
+	   document.write("<br>");
+	   
+	   // push   output= lotus, sunflower, lilly, rose   return=4 (length)
+	   flowers=["lotus", "sunflower", "lilly"];
+	   let flower=flowers.push("rose");
+	   document.write(flowers);
+	   document.write("<br>");
+	   
+	   // reversed   output, return= watermelon, banana, apple, mango
+	   fruits=["mango", "apple", "banana", "watermelon"];
+	   fruit=fruits.reverse();
+	   document.write(fruits);
+	   document.write("<br>");
+	   
+	   // reduce
+	   let number=[2, 4, 6, 3];
+	   result=number.reduce((prev,curr)=>{
+	      return (prev + curr)
+	   })
+	   document.write(result);
+	   document.write("<br>")
+	   
+	   // map
+	   animal=["dog", "cat", "lion", "tiger"];
+	   animals=animal.map((animal)=>{
+	      return animal.toUpperCase();
+	   })
+	   document.write(animals);
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+   </script>
+   
+
+</body>
+</html>
