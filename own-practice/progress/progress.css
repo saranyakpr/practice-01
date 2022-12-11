@@ -1,22 +1,37 @@
-.progress{
+.RadialProgress {
+  --hue: 220;
+  --holesize: 65%;
+  --track-bg: hsl(233 34% 92%);
+  
+  block-size: 50vmin;
+  inline-size: 50vmin;
+  min-inline-size: 100px;
+  min-block-size: 100px;
+  display: grid;
+  place-items: center;
   position: relative;
-  margin: 4px;
-  float:left;
-  text-align: center;
-}
-.barOverflow{ /* Wraps the rotating .bar */
-  position: relative;
-  overflow: hidden; /* Comment this line to understand the trick */
-  width: 90px; height: 45px; /* Half circle (overflow) */
-  margin-bottom: -14px; /* bring the numbers up */
-}
-.bar{
-  position: absolute;
-  top: 0; left: 0;
-  width: 90px; height: 90px; /* full circle! */
-  border-radius: 50%;
-  box-sizing: border-box;
-  border: 5px solid #eee;     /* half gray, */
-  border-bottom-color: #0bf;  /* half azure */
-  border-right-color: #0bf;
+  font-weight: 700;
+  font-size: max(10vmin, 1.4rem);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
+    background: conic-gradient(
+      hsl(var(--hue) 100% 70%),
+      hsl(var(--hue) 100% 40%),
+      hsl(var(--hue) 100% 70%) var(--progress, 0%),
+      var(--track-bg) var(--progress, 0%) 100%
+    );
+    
+    mask-image: radial-gradient(
+      transparent var(--holesize),
+      black calc(var(--holesize) + 0.5px)
+    );
+  }
 }
