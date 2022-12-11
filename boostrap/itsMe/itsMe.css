@@ -135,6 +135,10 @@ body{
 	color:#444444;
 	text-align:center;
 }
+.res{
+	box-shadow:5px 5px 8px rgba(0.2,0.2,0.2,0.2);
+	padding:2rem;
+}
    /* resume end */
    /* project start */
 .projectIn h2::after{
