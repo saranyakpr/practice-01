@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>react</title>
+</head>
+<body>
+   <script>
+   
+      <!-- console.log(a); -->
+	  <!-- var a=10; -->
+	  
+	  // map method
+	 numbers=[1, 2, 3, 4, 5];
+	 console.log(numbers);
+	 let number=numbers.map(function(val){
+	    return val*2;
+	 })
+	 console.log(number);
+	 
+	 fruits=["apple", "mango", "grapes", "watermelon"];
+	 console.log(fruits);
+	 let fruit=fruits.map(function(fru){
+	    return fru.toUpperCase();
+	 })
+	 console.log(fruit);
+	 
+	 
+	 // filter
+	 number=[1, 2, 3, 4, 5, 6, 7, 8, 9];
+	 console.log(number);
+	 <!-- let num=number.filter(function(value){ -->
+	    <!-- return value > 5; -->
+	 <!-- }); -->
+	 <!-- console.log(num); -->
+	 
+	 let evenNum=number.filter(function(value){
+	    return value % 2==0;
+	 });
+	 console.log(evenNum);
+	 
+	 let oddNum=number.filter(function(value){
+	    return value%2==1;
+	 });
+	 console.log(oddNum); 
+	 
+	 //reduce
+	 array=[1, 12, 43, 54, 24];
+	 let arr=array.reduce(function(pre,cur){
+	    return pre+cur;
+	 });
+	 console.log(arr)
+	 
+	 
+	 
+	  
+	  
+	  
+	  
+   </script>
+</body>
+</html>
