@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>bill</title>
+</head>
+<body>
+   <script>
+   // callback function
+   function callback(){
+      console.log("coming from callback");
+   }
+   
+   function higherOrder(fn){
+      console.log("about to call callback");
+	  fn();
+   }
+   higherOrder(callback);
+   
+   
+   
+   </script>
+</body>
+</html>
