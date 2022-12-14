@@ -4,20 +4,71 @@
     <meta charset="UTF-8">
 	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>bill</title>
+    <title>function</title>
 </head>
 <body>
    <script>
    // callback function
-   function callback(){
-      console.log("coming from callback");
+   function funOne(){
+      console.log("first");
+	  console.log("fourth");
    }
    
-   function higherOrder(fn){
-      console.log("about to call callback");
-	  fn();
+   function funTwo(fO){
+      console.log("second");
+	  fO();
+	  console.log("third");
    }
-   higherOrder(callback);
+   funTwo(funOne);
+   
+   
+   
+   // callback hell
+   
+   function funA(fD){
+      console.log("hi this is 1st call");
+	  fD(funB);
+   }
+   
+   function funB(fC){
+      console.log("hi this is 2nd call");
+	  fC();
+   }
+   
+   function funC(){
+      console.log("hi this is 3rd call");
+	  console.log("this is end")
+   }
+   function funD(fB){
+      console.log("hi this is 4th call");
+	  fB(funC);
+   }
+   function funE(fA){
+      console.log("hi this is 5th call");
+	  fA(funD);
+   }
+   funE(funA);
+   
+   
+   // promise
+   
+   function prom(){
+	    return new Promise(function(resolve,reject){
+		    setTimeout(function(){
+			    resolve()
+			});
+		})
+	}
+    prom()
+	.then(function(resolve){
+	    console.log("success")
+	})
+    .catch(function(reject){
+	    console.log("error")
+	})
+   
+   
+   
    
    
    
