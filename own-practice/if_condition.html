@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ifelse_condition</title>
+</head>
+<body>
+   <script>
+   
+   //divisible by 7
+	 let num=prompt("enter a number");
+	  if(num%7==0){
+	     document.write("divisible by 7");
+	  }
+	  else{
+	     document.write("not divisible by 7");
+	 }
+	 document.write("<br>")
+	 document.write("<br>");
+   
+   
+   // color
+   
+   let color=prompt("enter color");
+   switch(color){
+      case "red":
+	     document.write("color is red");
+		 break;
+	  case "blue":
+	     document.write("color is blue");
+		 break;
+	  case "yellow":
+	     document.write("color is yellow");
+		 break;
+	  case "white":
+	     document.write("color is white");
+		 break;
+	  default:
+	     document.write("unknown color");
+   }
+   document.write("<br>")
+   document.write("<br>")
+   
+   // nested if
+   
+   let menAge=prompt("enter men age");
+   let womanAge=prompt("enter woman age");
+   
+   if(menAge >= 25){
+      if(womanAge >=18){
+      document.write("eligible to marriage");
+	  }
+	  else{
+	     document.write("woman is not eligible to marriage");
+	  }
+   }
+   else{
+      document.write("men is not eligible to marriage");
+   }
+   
+   
+   
+   
+   
+   
+   </script>
+
+
+
+</body>
+</html>
