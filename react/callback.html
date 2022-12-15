@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+   <script>
+   // callback function
+   function funOne(){
+      console.log("first");
+	  console.log("fourth");
+   }
+   
+   function funTwo(fO){
+      console.log("second");
+	  fO();
+	  console.log("third");
+   }
+   funTwo(funOne);
+   
+   
+   
+   // callback hell
+   
+   function funA(fD){
+      console.log("hi this is 1st call");
+	  fD(funB);
+   }
+   
+   function funB(fC){
+      console.log("hi this is 2nd call");
+	  fC();
+   }
+   
+   function funC(){
+      console.log("hi this is 3rd call");
+	  console.log("this is end")
+   }
+   function funD(fB){
+      console.log("hi this is 4th call");
+	  fB(funC);
+   }
+   function funE(fA){
+      console.log("hi this is 5th call");
+	  fA(funD);
+   }
+   funE(funA);
+   
+   
+  
+   
+   
+  
+    
+   
+
+   
+   </script>
+</body>
+</html>
