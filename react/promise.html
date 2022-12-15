@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>promise</title>
+</head>
+<body>
+   <script>
+   
+    // promise
+  
+     let main = new Promise(function(resolve, reject){
+	    setTimeout(function(){
+		   resolve();
+		},3000);
+	 });
+  main
+     .then(function(resolve){
+	    console.log("promise success");
+	 })
+	 .catch(function(reject){
+	    console.log("promise error");
+	 });
+	 
+	 
+	 // promise chaining
+	 
+	 let main1 = new Promise(function(resolve, reject){
+	    setTimeout(function(){
+		   resolve();
+		},3000);
+	 });
+	 let main2 = new Promise(function(resolve, reject){
+		   resolve();
+	 });
+	 let main3 = new Promise(function(resolve, reject){
+	    setTimeout(function(){
+		   resolve();
+		},2000);
+	 });
+	 let main4 = new Promise(function(resolve, reject){
+		   resolve();
+	 });
+     main1
+        .then(function(resolve){
+	     console.log("success");
+		    main2
+			   .then(function(resolve){
+			    console.log("success");
+				  main3
+				     .then(function(resolve){
+					 console.log("success");
+					    main4
+						   .then(function(resolve){
+						   console.log("success");
+						   })
+						   .catch(function(reject){
+						   console.log("error")
+						   })
+					 })
+					 .catch(function(reject){
+					 console.log("error")
+					 })
+			   })
+			   .catch(function(reject){
+			   console.log("error")
+			   })
+     })
+	 .catch(function(reject){
+	    console.log("error")
+	 })
+	  
+	  
+	  
+	  // promise all
+	  
+	
+	      let pro = new Promise(function(resolve, reject){
+		     resolve("res1");
+		  });
+	   
+		 let pro1 = new Promise(function(resolve, reject){
+		    resolve("res2");
+		 });
+	  
+	  Promise.all([pro, pro1])
+	     .then(function(resolve){
+		    console.log("pro success" ,resolve);
+		 })
+		 .catch(function(reject){
+		    console.log("pro reject", reject);
+		 })
+	  
+	  
+	 // async and await
+
+	 let pro3= new Promise(function(resolve,reject){
+        resolve("resolve1");
+	 });
+	   
+	 let pro4= new Promise(function(resolve,reject){
+       resolve("resolve2");
+	 });
+	 
+	async function Parent(){
+	   try{
+	       var resolve1=await pro3;
+	       var resolve2=await pro4;
+		   console.log("resolve",resolve1,resolve2);
+		  } 
+		  catch(err){
+		  console.log("error");
+		  }
+	}
+	Parent()	 
+	 
+	   
+	  
+	  
+		 
+	 
+   
+   
+   </script>
+</body>
+</html>
