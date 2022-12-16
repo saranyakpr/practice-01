@@ -16,13 +16,13 @@
 		   resolve();
 		},3000);
 	 });
-  main
-     .then(function(resolve){
+  main.then(function(resolve){
 	    console.log("promise success");
 	 })
 	 .catch(function(reject){
 	    console.log("promise error");
 	 });
+     
 	 
 	 
 	 // promise chaining
@@ -43,34 +43,27 @@
 	 let main4 = new Promise(function(resolve, reject){
 		   resolve();
 	 });
-     main1
-        .then(function(resolve){
+     main1.then(function(resolve){
 	     console.log("success");
-		    main2
-			   .then(function(resolve){
+		    main2.then(function(resolve){
 			    console.log("success");
-				  main3
-				     .then(function(resolve){
-					 console.log("success");
-					    main4
-						   .then(function(resolve){
+				  main3.then(function(resolve){
+				     console.log("success");
+					    main4.then(function(resolve){
 						   console.log("success");
-						   })
-						   .catch(function(reject){
+						   }).catch(function(reject){
 						   console.log("error")
 						   })
-					 })
-					 .catch(function(reject){
+					 }).catch(function(reject){
 					 console.log("error")
 					 })
-			   })
-			   .catch(function(reject){
+			   }).catch(function(reject){
 			   console.log("error")
 			   })
-     })
-	 .catch(function(reject){
+     }).catch(function(reject){
 	    console.log("error")
 	 })
+	 
 	  
 	  
 	  
@@ -78,11 +71,11 @@
 	  
 	
 	      let pro = new Promise(function(resolve, reject){
-		     resolve("res1");
+		     resolve("resolve1");
 		  });
 	   
 		 let pro1 = new Promise(function(resolve, reject){
-		    resolve("res2");
+		    resolve("resolve2");
 		 });
 	  
 	  Promise.all([pro, pro1])
@@ -109,10 +102,10 @@
 	       var resolve1=await pro3;
 	       var resolve2=await pro4;
 		   console.log("resolve",resolve1,resolve2);
-		  } 
-		  catch(err){
+	   } 
+	   catch(err){
 		  console.log("error");
-		  }
+	   }
 	}
 	Parent()	 
 	 
