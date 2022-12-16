@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>bill</title>
+</head>
+<body>
+   <script>
+   // normal function
+   
+   let person={
+      name:"saran",
+	  age:21,
+	  profession:"developer",
+	  getName:function(){
+	     console.log("user name is " + this.name)
+	  }
+   }
+   person.getName();
+   
+   
+   // call
+   
+   let person2={
+          name:"saranya",
+		  age:21,
+		  profession:"developer"
+   }
+   person.getName.call(person2,'raja');   
+   
+   
+   
+   
+   
+   </script>
+
+
+
+</body>
+</html>
