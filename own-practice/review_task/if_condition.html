@@ -116,7 +116,7 @@
 	let person3 = prompt("Enter person3 age");
 
    if(person1 > (person2 && person3)){
-      if(person2 < (person1 && person3)){
+      if(person2 < person3){
 	     console.log("person1 is oldest and person3 is youngest");
 	  }
 	  else{
@@ -124,32 +124,21 @@
 	  }
    }
    else if(person2 > (person1 && person3)){
-      if(person3 < (person1 && person2)){
-	     console.log("person2 is oldest and person1 is youngest");
+      if(person3 < person2){
+	     console.log("person1 is oldest and person3 is youngest");
 	  }
 	  else{
-      console.log("person3 is oldest and person2 is youngest");
+      console.log("person2 is oldest and person1 is youngest");
       }
    }
    else{
-      if(person3 > (person1 && person2)){
+      if(person3 > person2){
 	     console.log("person3 is oldest and person1 is youngest");
 	  }
 	  else{
-	     console.log("person2 is oldest and person3 is youngest")
+	     console.log("person3 is oldest and person2 is youngest");
 	  }
    }
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
    
    
    
