@@ -62,13 +62,12 @@
    }
    else if(month==2){
       console.log('February');
-      if(year%4==0){
+      if((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)){
 	     console.log('leap year');
-		 console.log('29 days');
+		 console.log('28 days');
 	  }
 	  else{
-	     console.log('not leap year');
-		 console.log('28 days');
+		 console.log('29 days');
 	  };
    }
    else if(month==3){
