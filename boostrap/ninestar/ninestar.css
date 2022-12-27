@@ -29,7 +29,7 @@
 	margin-bottom:0;
 	border:1px solid #EB5D1E;
 	background-color:#EB5D1E;
-	border-radius:15%;
+	border-radius:50px;
 }
 .button{
 	color:white;
@@ -129,12 +129,13 @@
 	margin-top:4rem;
 }
 .serCont{
-	box-shadow:0px 5px 90px 0px rgb(110 123 131 / 10%);
 	border-radius:5%;
 }
 .serCont:hover{
-	box-shadow:0px 5px 0px 0px orange;
-	transition:translate(0,-3px);	
+	border-bottom:3px solid #EF7F4D;
+	transform:translate(0,-5px);
+	transition:0.3s ease;
+	margin-top:-3px;
 }
 .serCont h4{
 	margin-top:1rem;
@@ -149,9 +150,19 @@
 
    /* services end */
    /* portfolio start */
-   .imgs img{
+.imgs img{
 	   width:100%;
-   }
+}
+.imgs::before{
+	content:"";
+	position:absolute;
+	width:0%;
+	background:#8d808080;
+	top:0;
+	right:0;
+	transition:all .4s;
+	color:white;
+}  
 .portfolio{
 	margin-top:3rem;
 }
@@ -677,7 +688,6 @@
 	margin-bottom:0;
 	border:1px solid #EB5D1E;
 	background-color:#EB5D1E;
-	border-radius:15%;
 }
 .button{
 	color:white;
