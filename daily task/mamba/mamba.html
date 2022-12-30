@@ -15,7 +15,6 @@
 	
 </head>
 <body>
-<!--topbar section-->
 <section class="topbar">
     <div class="container">
         <div class="top-head">
@@ -32,30 +31,28 @@
         </div>
     </div>
 </section>
-<!--header section-->
 <section class="header">
 	<div class="container">
 		<div class="head-content">
 			<div class="hed-title">
 				<h1>MAMBA</h1>
 			</div>
-			<div class="head-nav">
-				<a href="">Home</a>
-				<a href="">About</a>
-				<a href="">Service</a>
-				<a href="">Portfolio</a>
-				<a href="">Team</a>
-				<a href="">Drop Down</a>
-				<a href="">Contact</a>
+			<div class="head-nav" id="navList">
+				<a href="#1" class="solo navLink">Home</a>
+				<a href="#2" class="navLink">About</a>
+				<a href="#3" class="navLink">Service</a>
+				<a href="#4" class="navLink">Portfolio</a>
+				<a href="#5" class="navLink">Team</a>
+				<a href="" class="navLink">Drop Down</a>
+				<a href="#6" class="navLink">Contact</a>
 			</div>
 			<div class="head-mobileview">
-				<i id="burger" class="bi bi-list"></i>	
+				<i id="burger" onclick="myFunction()" class="bi bi-list"></i>	
 			</div>
 		</div>
 	</div>
 </section>
-<!--banner section-->
-<section class="banner">
+<section class="banner" id="1">
 	<div class="container">
 		<div class="banner-title">
 			<h2>Welcome to Mamba</h2>
@@ -66,8 +63,7 @@
 		</div>
 	</div>
 </section>
-<!--about section-->
-<section class="about">
+<section class="about" id="2">
 	<div class="container shadow">
 		<div class="about-coloumn">
 			<div class="about-row1">
@@ -103,7 +99,6 @@
 		</div>
 	</div>
 </section>
-<!-----list section---->
 <section class="listsectiion">
 	<div class="container">
 		<div class="list-row">
@@ -140,7 +135,6 @@
 		</div>
 	</div>
 </section>
-<!----count section------>
 <section class="count">
 	<div class="container">
 		<div class="count-row">
@@ -163,8 +157,7 @@
 		</div>
 	</div>
 </section>
-<!---service section--->
-<section class="service">
+<section class="service" id="3">
 	<div class="container">
 		<div class="service-title">
 			<h1>Services</h1>
@@ -215,8 +208,7 @@
 		</div>
 	</div>
 </section>
-<!--portfolio section-->
-<section class="portfolio">
+<section class="portfolio" id="4">
 	<div class="container">
 		<div class="port-title">
 			<h2>Our Portfolio</h2>
@@ -331,8 +323,7 @@
 		</div>
 	</div>
 </section>
-<!----our team----->
-<section class="team">
+<section class="team" id="5">
 	<div class="container">
 		<div class="team-title">
 			<h2>OUR TEAM</h2>
@@ -402,7 +393,6 @@
 		</div>
 	</div>
 </section>
-<!--question section-->
 <section class="question">
 	<div class="container">
 		<div class="question-title">
@@ -436,8 +426,7 @@
 		</div>
 	</div>
 </section>
-<!---contact section----->
-<section class="contact">
+<section class="contact" id="6">
 	<div class="container">
 		<div class="contact-title">
 			<h2>CONTACT US</h2>
@@ -482,7 +471,6 @@
 		</div>
 	</div>
 </section>
-<!----footer section---->
 <section class="footer">
 	<div class="container">
 		<div class="footer-coloumn">
@@ -526,7 +514,6 @@
 		</div>
 	</div>
 </section>
-<!--footer-second-->
 <section class="footer-second">
 	<div class="container">
 		<div class="second-content">
@@ -539,11 +526,19 @@
 
 
 <script>
-   let burger = getElementById("burger");
-   burger.addEventListener("click", myFunction);
-   
+ 
    function myFunction(){
-      
+      var navList = document.getElementById("navList");
+	  if(navList.style.display==="" || navList.style.display==="none"){
+	     navList.style.display="block";
+	  }
+	  else if(navList.style.display==="block"){
+	     navList.style.display="none";
+	  }	  
+	  else{
+	     navList.style.display="block";
+	  }
+	 
    }
    
 
