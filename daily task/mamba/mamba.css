@@ -204,7 +204,7 @@ body{
         padding-right: 2.5rem;
     }
     
-    .hed-title h1{
+    .head-title h1{
         font-size: 2rem;
         font-weight: 500;
         color: #5c768d;
@@ -1172,6 +1172,7 @@ body{
 .port-pic{
     width: 100%;
     position: relative;
+	margin-bottom:2rem;
 }
 .pic-content{
     text-align: center;
@@ -1225,9 +1226,9 @@ body{
 .port-pic:hover .pic-content{
    opacity: 1;
 }
-.port-button .solo{
-	background-color:#1c5c93;
-	color:white;
+.solo{
+	background-color:#1c5c93!important;
+	color:white!important;
 }
 }
 @media(min-width:560px){
@@ -2134,7 +2135,7 @@ textarea:focus{
  .foots{
 	display:inline-block;
 	margin-left:-2rem;
-	padding:0.7rem;
+	padding:0.8rem;
 	background-color:#428bca;
 	border-color:#428bca;
 	color:white;
@@ -2142,7 +2143,6 @@ textarea:focus{
 .foott{
 	display:inline-block;
 	padding:0.7rem;
-	width:18rem;
 	background-color:aliceblue;
 }
 }
