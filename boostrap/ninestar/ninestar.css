@@ -437,7 +437,6 @@
 	background-color:#f9f5f5;
 	border-bottom:2px solid orange;
 	border-top:2px solid orange;
-	padding:4rem;
 	margin-top:-5rem;
 }
 .info iconify-icon{
@@ -505,7 +504,7 @@
 	color:white;
 	display:flex;
 	border-radius:5px;
-	padding:10px 10px;
+	padding:.3rem;
 	float:right;
 }
 .search button a{
@@ -513,7 +512,7 @@
 	text-decoration:none;
 }
 .search input{
-	width:70%;
+	width:50%;
 	height:20px;
 	margin-top:7px;
 }
@@ -616,7 +615,7 @@
 }
 
 }
-@media screen and (min-width: 768px) 
+@media screen and (min-width: 768px){
    /* header start */
 {
 .collapse{
@@ -684,7 +683,13 @@
    /* client start */
    /* client end */
 }
-
+.search button{
+	width:12rem;
+	text-align:center;
+	display:flex;
+	justify-content:center;
+}
+}
 @media screen and (min-width: 1024px) 
    /* header start */
 {
@@ -828,7 +833,6 @@
 	background-color:#f9f5f5;
 	border-bottom:2px solid orange;
 	border-top:2px solid orange;
-	padding:4rem;
 }
 .info iconify-icon{
 	width:44px;
