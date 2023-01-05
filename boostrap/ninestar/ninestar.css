@@ -75,6 +75,9 @@
 }
    /* header end */
    /* about start */
+.about{
+	padding-top:3rem;
+}
 .abticon{
 	font-size:3rem;
 	color:#EF7F4D;
@@ -100,9 +103,9 @@
     /* about end */
 	/* services start */
 .services{
-	margin-top:5rem;
 	background-color:#FEF8F5;
-	padding-top:3rem;
+	padding-top:6rem;
+	padding-bottom:6rem;
 }
 .servicesHead h3{
 	font-size:2rem;
@@ -887,6 +890,9 @@
 	width:70%;
 	height:30px;
 	margin-top:7px;
+}
+.con{
+	padding-top:1rem;
 }
 }
 
