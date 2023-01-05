@@ -60,9 +60,7 @@ body{
 	.navLink:hover{
 		color:blue;
 	}
-	.solo{
-		color:blue!important;
-	}
+	
 	
     }
 @media (min-width:560px){
@@ -248,6 +246,9 @@ body{
 .head-nav a{
     font-size: 1.1rem;
     color: #5c768d;
+}
+.solo{
+	color:blue!important;
 }
 }
 /*banner section*/
@@ -1225,10 +1226,6 @@ body{
 }
 .port-pic:hover .pic-content{
    opacity: 1;
-}
-.solo{
-	background-color:#1c5c93!important;
-	color:white!important;
 }
 }
 @media(min-width:560px){
