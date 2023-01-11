@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>function</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="resume.css">
+</head>
+<body>
+   <script>  
+   <!-- function add(a,b){ -->
+	  <!-- let result=a*b; -->
+	  <!-- return result; -->
+	<!-- } -->
+		<!-- let c=add(2,4); -->
+		<!-- console.log(c) -->
+   
+   
+   // reverse number using function
+   
+  <!-- let a = reverse(12); -->
+
+        <!-- function reverse(num){ -->
+            <!-- let res=0; -->
+            <!-- while(num > 0){ -->
+            <!-- let rem = (num % 10); -->
+            <!-- num=parseInt(num / 10); -->
+            <!-- res=(res * 10) + rem; -->
+        <!-- } -->
+            <!-- return (res); -->
+        <!-- } -->
+        <!-- document.write(a); -->
+		
+	// vowels with function
+	
+   var name="saranya";
+        var str=fun(name);
+
+            function fun(name){
+            let tem=[];
+
+            for(i=0;i<name.length;i++){
+                if(name[i]!="a" && name[i]!="e" && name[i]!="i" && name[i]!="o" && name[i]!="u"){
+                    tem++
+                }
+            }
+            return tem
+        }
+        document.write(str);
+		
+		var num1 = prompt("enter a number");
+		var num2 = prompt("enter a number");
+		var operator = prompt("enter a operator");
+		
+		function fun(){
+		   var result = parseInt(num1 + operator + num2);
+		   document.write(result);
+		}
+		fun();
+	
+
+
+
+        <!-- let num1 = parseInt(prompt("enter the number")); -->
+		<!-- let num2 = parseInt(prompt("enter the number")); -->
+		<!-- let operator = prompt("enter the operator"); -->
+		
+		<!-- function addition(num1,num2){ -->
+			<!-- document.write(num1+num2); -->
+		<!-- } -->
+		<!-- function subtraction(num1,num2){ -->
+		      <!-- document.write(num1-num2); -->
+		<!-- } -->
+		<!-- function multiple(num1,num2){ -->
+			<!-- document.write(num1*num2); -->
+		<!-- } -->
+        <!-- function divisible(num1,num2){ -->
+			<!-- document.write(num1/num2); -->
+		<!-- } -->
+        <!-- function remain(num1,num2){ -->
+			<!-- document.write(num1%num2); -->
+		<!-- } -->
+		<!-- if(operator=='+'){ -->
+			<!-- addition(num1,num2); -->
+		<!-- } -->
+		<!-- else if(operator=='-'){ -->
+			<!-- subtraction(num1,num2); -->
+		<!-- } -->
+		<!-- else if(operator=='*'){ -->
+			<!-- multiple(num1,num2); -->
+		<!-- } -->
+        <!-- else if(operator=='/'){ -->
+			<!-- divisible(num1,num2); -->
+		<!-- } -->
+        <!-- else if(operator=='%'){ -->
+			<!-- remain(num1,num2); -->
+		<!-- } -->
+
+       
+	   
+	   var num = 4,
+	   str = "";
+	    
+	   for(i=1; i<=num; i++){
+	      for(j=1; j<=num-i; j++){
+		     str+=" "
+		  }
+		  for(k=0; k<2*i-1; k++){
+		     str+="*"
+		  }
+		str+="\n";	
+	   }
+	   console.log(str);
+	   
+	   
+	   
+	   
+	
+	
+   
+   
+   </script>
+</body>
+</html>

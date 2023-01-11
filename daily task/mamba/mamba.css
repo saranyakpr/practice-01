@@ -40,7 +40,7 @@ body{
     }
     .top-head{
         display: flex;
-        justify-content: center;
+        justify-content: justify-content;
     }
     .top-icon1{
         display: flex;
@@ -60,6 +60,9 @@ body{
 	.navLink:hover{
 		color:blue;
 	}
+	.navList{
+		display:none;
+	}
 	
 	
     }
@@ -77,7 +80,6 @@ body{
     }
     .top-head{
         display: flex;
-        justify-content: center;
         justify-content: space-between;
     }
     .top-icon1{
@@ -106,6 +108,7 @@ body{
     .top-icon2 i:hover{
         color:  #428bca;
     }
+	
     }
 @media (min-width:992px){
 .container{
@@ -144,6 +147,7 @@ body{
 .top-icon2 i:hover{
     color:  #428bca;
 }
+
 }
 /*header section*/
 @media(min-width:360px){
