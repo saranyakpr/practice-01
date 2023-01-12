@@ -35,30 +35,30 @@
 		
 	// vowels with function
 	
-   var name="saranya";
-        var str=fun(name);
+   <!-- var name="saranya"; -->
+        <!-- var str=fun(name); -->
 
-            function fun(name){
-            let tem=[];
+            <!-- function fun(name){ -->
+            <!-- let tem=[]; -->
 
-            for(i=0;i<name.length;i++){
-                if(name[i]!="a" && name[i]!="e" && name[i]!="i" && name[i]!="o" && name[i]!="u"){
-                    tem++
-                }
-            }
-            return tem
-        }
-        document.write(str);
+            <!-- for(i=0;i<name.length;i++){ -->
+                <!-- if(name[i]!="a" && name[i]!="e" && name[i]!="i" && name[i]!="o" && name[i]!="u"){ -->
+                    <!-- tem++ -->
+                <!-- } -->
+            <!-- } -->
+            <!-- return tem -->
+        <!-- } -->
+        <!-- document.write(str); -->
 		
-		var num1 = prompt("enter a number");
-		var num2 = prompt("enter a number");
-		var operator = prompt("enter a operator");
+		<!-- var num1 = prompt("enter a number"); -->
+		<!-- var num2 = prompt("enter a number"); -->
+		<!-- var operator = prompt("enter a operator"); -->
 		
-		function fun(){
-		   var result = parseInt(num1 + operator + num2);
-		   document.write(result);
-		}
-		fun();
+		<!-- function fun(){ -->
+		   <!-- var result = parseInt(num1 + operator + num2); -->
+		   <!-- document.write(result); -->
+		<!-- } -->
+		<!-- fun(); -->
 	
 
 
@@ -98,22 +98,27 @@
 			<!-- remain(num1,num2); -->
 		<!-- } -->
 
-       
-	   
-	   var num = 4,
-	   str = "";
-	    
-	   for(i=1; i<=num; i++){
-	      for(j=1; j<=num-i; j++){
-		     str+=" "
-		  }
-		  for(k=0; k<2*i-1; k++){
-		     str+="*"
-		  }
-		str+="\n";	
-	   }
-	   console.log(str);
-	   
+
+    
+      let name = prompt("Enter a Name");
+		let letter =prompt("Enter a CheckLeter");
+		let tem =0;
+		let result=fun(name,letter);
+		function fun(name,letter){
+			for (i=0; i< name.length; i++){
+				
+				if (name[i]== letter){
+					tem++;
+				}
+			}
+			if(tem){
+				document.write("This word has "+ tem + " same letter");
+			}
+			else{
+				document.write("This word  not same letter");
+			}
+		}
+
 	   
 	   
 	   
