@@ -39,7 +39,8 @@
 }
 .digital{
 	background-color:#FEF8F5;
-	padding:2rem;
+	padding-top:6rem;
+	padding-bottom:6rem;
 }
 .head h3{
 	margin-top:3rem;
@@ -76,7 +77,8 @@
    /* header end */
    /* about start */
 .about{
-	padding-top:3rem;
+	padding-top:16rem;
+	padding-bottom:6rem;
 }
 .abticon{
 	font-size:3rem;
@@ -104,7 +106,7 @@
 	/* services start */
 .services{
 	background-color:#FEF8F5;
-	padding-top:6rem;
+	padding-top:16rem;
 	padding-bottom:6rem;
 }
 .servicesHead h3{
@@ -154,6 +156,10 @@
 	line-height:1.5rem;
 	text-align:center;
 }
+.section5{
+	padding-bottom:6rem;
+	padding-top:12rem;
+}
 
    /* services end */
    /* portfolio start */
@@ -171,7 +177,8 @@
 	color:white;
 }  
 .portfolio{
-	margin-top:3rem;
+	padding-bottom:6rem;
+	padding-top:18rem;
 }
 .portHead{
 	margin-bottom: 2rem;
@@ -333,7 +340,8 @@
 	display:block;
 }
 .team{
-	margin-bottom:3rem;
+	padding-top:16rem;
+	padding-bottom:6rem;
 }
 .teamImg{
 	position:relative;
@@ -409,6 +417,13 @@
 	background-color:#EF7F4D;
 	display:block;
 }
+.brand{
+	width:100%;
+}
+.items{
+	width:60%;
+	margin:auto;
+}
    /* client end */
    /* contact start */
 .contact{
@@ -441,6 +456,8 @@
 	border-bottom:2px solid orange;
 	border-top:2px solid orange;
 	margin-top:-5rem;
+	padding-top:3rem;
+	padding-bottom:3rem;
 }
 .info iconify-icon{
 	width:44px;
@@ -453,7 +470,6 @@
 	align-items:center;
 	float:left;
 	font-size:1.5rem;
-	margin-left:-3rem;
 }
 .address iconify-icon:hover{
 	   background-color:#EB5D1E;
@@ -497,7 +513,6 @@
 .search{
 	margin-left:30px;
 	width:80%;
-	height:10vh;
 	box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 10%);
 	background-color:white;
 }
@@ -745,8 +760,9 @@
    /* header end */
    /* about start */
  .about{
-	 margin-top:5rem;
- }
+	padding-top:3rem;
+	padding-bottom:3rem;
+}
  .abtHead h2{
 	 font-size:3.5rem;
  }
@@ -772,6 +788,10 @@
 .servicesHead h2::after{
 	width:6%;
 }
+.services{
+	padding-top:12rem;
+	padding-bottom:6rem;
+}
 
    /* portfolio start */
 .portLinks{
@@ -785,6 +805,10 @@
 }
 .portIcon iconify-icon{
 	margin-top:3rem;
+}
+.portfolio{
+	padding-bottom:3rem;
+	padding-top:3rem;
 }
 /* .imgs:hover .portIcon{
 	width:299px;
@@ -811,6 +835,11 @@
 .teamCont h2::after{
 	width:6%;
 }
+.team{
+	padding-top:3rem;
+	padding-bottom:3rem;
+}
+
    /* team end */
    /* client start */
 .clientCont h2::after{
