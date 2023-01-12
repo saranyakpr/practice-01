@@ -264,7 +264,7 @@ body{
 .banner{
 	background-image:url("image/slide.jpg");
 	background-size:cover;
-	background-attachment:fixed;
+	/* background-attachment:fixed; */
 	width:100%;
 	height:160vh;
 	background-position:top;
@@ -345,8 +345,8 @@ body{
 	background-image:url("image/slide.jpg");
 	width:100%;
 	background-size:cover;
-	background-attachment:fixed;
-	height:100vh;
+	/* background-attachment:fixed; */
+	height:70vh;
 	background-position:top;
 	position:relative;
 }
@@ -355,8 +355,8 @@ body{
 	top:0;
 	font-size:2rem;
 	color:white;
-	margin-top:25rem;
-	left:25rem;
+	margin-top:21rem;
+	left:22rem;
 	border:1px solid #418AC9;
 	border-radius:50%;
 	background-color:#418AC9;
@@ -419,8 +419,8 @@ body{
 }
 .banner{
 	background-image:url("image/slide.jpg");
-	background-size:cover;
-	background-attachment:fixed;
+	/* background-size:cover; */
+	/* background-attachment:fixed; */
 	width:100%;
 	height:80vh;
 	background-size:cover;
@@ -1448,7 +1448,7 @@ body{
 }
 .port-button .solo{
 	background-color:#1c5c93;
-	color:white;
+	color:white!important;
 }
 }
 /*team section*/

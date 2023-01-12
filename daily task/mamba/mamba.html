@@ -37,7 +37,7 @@
 			<div class="hed-title">
 				<h1>MAMBA</h1>
 			</div>
-			<div class="head-nav" id="navList">
+			<div class="head-nav navItems" id="navList">
 				<a href="#1" class="solo navLink">Home</a>
 				<a href="#2" class="navLink">About</a>
 				<a href="#3" class="navLink">Service</a>
@@ -523,28 +523,37 @@
 	</div>
 </section>
 
-
+<script>
+        const navLinks=document.querySelectorAll(".navLink") ;
+        const  menuToggle=document.getElementById("navList");
+        let bsCollabse=new bootstrap.Collapse(menuToggle,{toggle:false})
+        navLinks.forEach((e) =>{
+            e.addEventListener("click",()=>{bsCollabse.toggle()})
+        })
+      </script>	
 
 <script>
  
    function myFunction(){
       var navList = document.getElementById("navList");
+	  var navLink = document.getElementsByClassName("navLink");
 	  if(navList.style.display==="" || navList.style.display==="none"){
 	     navList.style.display="block";
+		 <!-- navLink.style.flex-direction="coloumn"; -->
 	  }
 	  else if(navList.style.display==="block"){
 	     navList.style.display="none";
 	  }	  
 	  else{
 	     navList.style.display="block";
+		 navLink.style.display="flex";
+		 <!-- navLink.style.flex-direction="coloumn"; -->
+		 
 	  }
 	 
    }
-   
-
-
-
 
 </script>
+
 </body>
 </html>
