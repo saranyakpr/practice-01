@@ -39,8 +39,8 @@
 }
 .digital{
 	background-color:#FEF8F5;
-	padding-top:6rem;
-	padding-bottom:6rem;
+	padding-top:3rem;
+	padding-bottom:5rem;
 }
 .head h3{
 	margin-top:3rem;
@@ -77,8 +77,7 @@
    /* header end */
    /* about start */
 .about{
-	padding-top:16rem;
-	padding-bottom:6rem;
+	padding-top:3rem;
 }
 .abticon{
 	font-size:3rem;
@@ -106,8 +105,8 @@
 	/* services start */
 .services{
 	background-color:#FEF8F5;
-	padding-top:16rem;
-	padding-bottom:6rem;
+	padding-top:3rem;
+	padding-bottom:3rem;
 }
 .servicesHead h3{
 	font-size:2rem;
@@ -177,8 +176,8 @@
 	color:white;
 }  
 .portfolio{
-	padding-bottom:6rem;
-	padding-top:18rem;
+	/* padding-bottom:6rem; */
+	/* padding-top:18rem; */
 }
 .portHead{
 	margin-bottom: 2rem;
@@ -340,8 +339,8 @@
 	display:block;
 }
 .team{
-	padding-top:16rem;
-	padding-bottom:6rem;
+	/* padding-top:18rem; */
+	/* padding-bottom:6rem; */
 }
 .teamImg{
 	position:relative;
@@ -427,7 +426,7 @@
    /* client end */
    /* contact start */
 .contact{
-	margin-top:5rem;
+	/* margin-top:5rem; */
 }
 .contact h3{
     color:#C2B7B1;
@@ -495,10 +494,10 @@
 	padding-top:1rem;
 	padding-bottom:4rem; 
 }
-.section9{
-	background-color:#FEF8F5;
-	padding-bottom:3rem;
-}
+/* .section9{ */
+	/* background-color:#FEF8F5; */
+	/* padding-bottom:3rem; */
+/* } */
 .new{
 	text-align:center;
 }
@@ -609,6 +608,10 @@
 .last i:hover{
 	background-color:#EF7E4C;
 	color:white;
+}
+.con{
+	/* padding-top:16rem; */
+	/* padding-bottom:6rem; */
 }
 /*footer*/
 .over{
@@ -877,6 +880,10 @@
 	align-items:center;
 	float:left;
 	font-size:1.5rem;
+}
+.con{
+	padding-top:3rem;
+	padding-bottom:3rem;
 }
 /* contact end */
 /* news letter */
