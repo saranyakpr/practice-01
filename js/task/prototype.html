@@ -8,73 +8,83 @@
 </head>
 <body>
    <script>
-      // 1.concat
+      // concat
 	  {let arr1=["mango", "apple", "orange"];
 	   let arr2=["graps", "banana"];
 	   let array=arr1.concat(arr2);
 	   console.log(array);
 	  }
 	  
-	  // 2.forEach
+	  // every
+	  {let str = [ 12, 23, 34, 45];
+	  let res = (resu) => resu < 10;
+	  console.log(str.every(res));}
+	  
+	   // some
+	  {let str = [ 12, 23, 34, 45];
+	  let res = (resu) => resu < 20;
+	  console.log(str.some(res));}
+	  
+	  // forEach
 	  {const flowers=["rose", "lotus", "lilly", "sunflower"];
-	  flowers.forEach(function(arrayvalue,index,array){
+	  flowers.forEach(function (arrayvalue,index,array){
 	     console.log(arrayvalue);
 		 console.log(index);
 		 console.log(array);
 	  });}
 	  
-	  // 3.map
+	  // map
 	  flowers=["rose", "lotus", "lilly", "sunflower"];
 	   const newArray=flowers.map(function(flower){
 	     return flower.toUpperCase();
 	  });
 	     console.log(newArray);
 	  
-	  // 4.push
+	  // push
 	 flowers=["rose", "lotus", "lilly"];
 	 flowers.push("sunflower");
 	 console.log(flowers);
 	  
-	  // 5.unshift
+	  // unshift
 	  flowers=["rose", "lotus", "lilly",];
 	  flowers.unshift("sunflower");
 	  console.log(flowers);
 	  
-	  // 6.splice
+	  // splice
 	  flowers=["rose", "lotus", "lilly", "sunflower"];
 	  flowers.splice(3,2);
 	  console.log(flowers);
 	  
-	  // 7.pop
+	  // pop
 	  fruits=["mango", "apple", "banana", "graps"];
 	  fruit=fruits.length;
 	  console.log(fruit);
 	  fruits.pop();
 	  console.log(fruits);
 	  
-	  // 8.shift
+	  // shift
 	  flowers=["rose", "lotus", "lilly", "sunflower"];
 	  flowers.shift();
 	  console.log(flowers);
 	  
-	  // 9.revers
+	  // revers
 	  flowers=["rose", "lotus", "lilly", "sunflower"];
 	  flower=flowers.reverse();
 	  console.log(flowers);
 	  console.log(flower);
 	  
-	  // 10.indexOf
+	  // indexOf
 	  flowers=[1,4,2,3,4,5,"3"];
       flower=flowers.indexOf(4);
 	  console.log(flower);
 	  
 	  
-	  // 11.lastindexOf
+	  // lastindexOf
 	  flowers=[1,4,2,3,4,5,"3"];
       flower=flowers.lastIndexOf(4);
 	  console.log(flower);
 	  
-	  // 12.sort
+	  // sort
 	  nums=[1, 11, 21, 110];
 	  num=nums.sort();
 	  console.log(num);
