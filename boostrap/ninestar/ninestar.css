@@ -1,3 +1,16 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 .container{
 	width:98%;
 	margin:auto;
@@ -175,10 +188,6 @@
 	transition:all .4s;
 	color:white;
 }  
-.portfolio{
-	/* padding-bottom:6rem; */
-	/* padding-top:18rem; */
-}
 .portHead{
 	margin-bottom: 2rem;
 }
@@ -338,10 +347,6 @@
 	background-color:#EF7F4D;
 	display:block;
 }
-.team{
-	/* padding-top:18rem; */
-	/* padding-bottom:6rem; */
-}
 .teamImg{
 	position:relative;
 	margin-top:2rem;
@@ -425,9 +430,6 @@
 }
    /* client end */
    /* contact start */
-.contact{
-	/* margin-top:5rem; */
-}
 .contact h3{
     color:#C2B7B1;
 	font-size:1.5rem;
@@ -539,7 +541,6 @@
 	.nine-2{
 		margin-top:30px;
 	}
-}
 .adSolcial{
 	padding-bottom:3rem;
 }
@@ -609,10 +610,6 @@
 	background-color:#EF7E4C;
 	color:white;
 }
-.con{
-	/* padding-top:16rem; */
-	/* padding-bottom:6rem; */
-}
 /*footer*/
 .over{
 	background-color:#FEF8F5;
@@ -638,7 +635,6 @@
 }
 @media screen and (min-width: 768px){
    /* header start */
-{
 .collapse{
 	justify-content:end;
 	padding:1rem;
@@ -703,7 +699,6 @@
    /* faq end */
    /* client start */
    /* client end */
-}
 .search button{
 	width:12rem;
 	text-align:center;

@@ -9,39 +9,39 @@
 <body>
    <script>
                 <!-- 1 -->
-      const details={
-	     name:"saranya",
-		 profession:"developer",
-		 hobies:["reading books", "scrolling internet"]
-	  }
-	  console.log(details);
-	 details.age=21;
-	 console.log(details);
-	 details.name="saran"
-	 console.log(details);
-	 delete details.name;
-	 console.log(details);
+      <!-- const details={ -->
+	     <!-- name:"saranya", -->
+		 <!-- profession:"developer", -->
+		 <!-- hobies:["reading books", "scrolling internet"] -->
+	  <!-- } -->
+	  <!-- console.log(details); -->
+	 <!-- details.age=21; -->
+	 <!-- console.log(details); -->
+	 <!-- details.name="saran" -->
+	 <!-- console.log(details); -->
+	 <!-- delete details.name; -->
+	 <!-- console.log(details); -->
 	  
-	  let person=[
-	     {
-		    name:"saranya",
-			id:123,
-			profession:"developer"
-		 }
+	  <!-- let person=[ -->
+	     <!-- { -->
+		    <!-- name:"saranya", -->
+			<!-- id:123, -->
+			<!-- profession:"developer" -->
+		 <!-- } -->
 		 
-	  ]
+	  <!-- ] -->
 	  
 	  
 	  
 	  // give object keys
 	  
-	  let per={
-	     name:"saran",
-		 age:21
-	  }
-	  for(i in person){
-	     console.log(i)
-	  }
+	  <!-- let per={ -->
+	     <!-- name:"saran", -->
+		 <!-- age:21 -->
+	  <!-- } -->
+	  <!-- for(i in person){ -->
+	     <!-- console.log(i) -->
+	  <!-- } -->
 	  
 	  
 	  
@@ -60,12 +60,12 @@
 	  
 	  
 	      <!-- 3 -->
-	  <!-- {const mobile={ -->
-	     <!-- name:"redmi", -->
-		 <!-- color:"white", -->
-		 <!-- price:12000 -->
-	  <!-- } -->
-	  <!-- console.log(mobile);} -->
+	  {const mobile={
+	     name:"redmi",
+		 color:"white",
+		 price:12000
+	  }
+	  console.log(mobile);}
 	  
 	  
 	  
@@ -289,6 +289,37 @@
 	
 	  <!-- up=arrayupdate(f); -->
 	  <!-- console.log(up); -->
+	  
+	  
+	  // array of object
+	   let employees = [
+			   {
+				   "id": 11,
+				   "name":"Abhinav",
+				   "salary":75000
+			   },
+			   {
+				   "id": 2131,
+				   "name":"Gaurav",
+				   "salary":62000
+			   },
+			   {
+				   "id": 3012,
+				   "name":"Raj",
+				   "salary":32000
+			   }
+	  ]
+	  let emp = employees.map(function(fun){
+	  return fun.salary;
+	  });
+	  console.log(emp);
+	 var max=emp[0];
+	 for(i=0;i<emp.length;i++){
+	    if(emp[i]>max){
+		   max = emp[i];
+		}
+	 }
+	 console.log(max)
 	  
 	  
 	 
