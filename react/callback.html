@@ -25,29 +25,62 @@
    
    // callback hell
    
-   function funA(fD){
-      console.log("hi this is 1st call");
-	  fD(funB);
-   }
+   <!-- function funA(fD){ -->
+      <!-- console.log("hi this is 1st call"); -->
+	  <!-- fD(funB); -->
+   <!-- } -->
    
-   function funB(fC){
-      console.log("hi this is 2nd call");
-	  fC();
-   }
+   <!-- function funB(fC){ -->
+      <!-- console.log("hi this is 2nd call"); -->
+	  <!-- fC(); -->
+   <!-- } -->
    
-   function funC(){
-      console.log("hi this is 3rd call");
-	  console.log("this is end")
-   }
-   function funD(fB){
-      console.log("hi this is 4th call");
-	  fB(funC);
-   }
-   function funE(fA){
-      console.log("hi this is 5th call");
-	  fA(funD);
-   }
-   funE(funA);
+   <!-- function funC(){ -->
+      <!-- console.log("hi this is 3rd call"); -->
+	  <!-- console.log("this is end") -->
+   <!-- } -->
+   <!-- function funD(fB){ -->
+      <!-- console.log("hi this is 4th call"); -->
+	  <!-- fB(funC); -->
+   <!-- } -->
+   <!-- function funE(fA){ -->
+      <!-- console.log("hi this is 5th call"); -->
+	  <!-- fA(funD); -->
+   <!-- } -->
+   <!-- funE(funA); -->
+   
+   <!-- function cm1(c5){ -->
+      <!-- console.log('1st'); -->
+	  <!-- c5(cm4); -->
+   <!-- } -->
+   <!-- function cm2(c1){ -->
+      <!-- console.log('2nd'); -->
+	  <!-- c1(cm5); -->
+   <!-- } -->
+   <!-- function cm3(c2){ -->
+      <!-- console.log('3rd'); -->
+	  <!-- c2(cm1); -->
+   <!-- } -->
+   <!-- function cm4(){ -->
+      <!-- console.log('4th'); -->
+	  <!-- console.log('function over'); -->
+   <!-- } -->
+   <!-- function cm5(c4){ -->
+      <!-- console.log('5th'); -->
+	  <!-- c4(); -->
+	  
+   <!-- } -->
+   <!-- cm3(cm2); -->
+   
+   // destructuring
+   
+   <!-- let obj = { -->
+      <!-- a:'b', -->
+	  <!-- c:'d' -->
+   <!-- } -->
+   <!-- console.log(obj.a); -->
+   <!-- const {a,c}=obj; -->
+   <!-- console.log(a,c) -->
    
    
   
